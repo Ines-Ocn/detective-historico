@@ -1635,6 +1635,9 @@ function restoreAnswers(idx) {
       if (el && (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT')) {
         el.value = savedAnswers[key];
       }
+      // Restaurer les radio buttons (sauvegardés par name, pas id)
+      const radio = document.querySelector(`#content-area input[type="radio"][name="${key}"][value="${savedAnswers[key]}"]`);
+      if (radio) radio.checked = true;
     });
   }, 50);
 }
@@ -1642,7 +1645,7 @@ function restoreAnswers(idx) {
 // ══════════════════════════════════════════
 //  GOOGLE SHEETS INTEGRATION
 // ══════════════════════════════════════════
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyxObTkAaXcD3_qWRfO8ls76pYxVQkf9UPeZaz4DcxeCutXQTz1ZDrlwWuE5r10Ew/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzzTNAwOYbm48KIRA4GE_MLN_DlaCtJpoUECrUXTI35YLRVjMVtyZGT6Mqo3pSjR2pH/exec';
 
 async function sendToSheets(code, sessionIdx, answers) {
   // Filter only answers for this session
@@ -1654,17 +1657,14 @@ async function sendToSheets(code, sessionIdx, answers) {
     }
   });
 
-  // Use GET + URL params — the only method that works with Apps Script without CORS issues
-  const params = new URLSearchParams({
-    code: code,
-    session: 'Sesión ' + sessionIdx,
-    answers: JSON.stringify(sessionAnswers)
-  });
-
   try {
-    // fetch avec mode no-cors : la requête arrive bien dans Apps Script
-    // (on ne peut pas lire la réponse, mais ce n'est pas nécessaire)
-    await fetch(SHEET_URL + '?' + params.toString(), { mode: 'no-cors' });
+    // POST + Content-Type text/plain : évite le preflight CORS tout en supportant un body JSON
+    await fetch(SHEET_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ code, session: 'Sesión ' + sessionIdx, answers: sessionAnswers })
+    });
     return true;
   } catch (err) {
     console.error('Error enviando a Sheets:', err);
@@ -1685,6 +1685,12 @@ async function submitSession(idx) {
 
   // Send to Google Sheets
   await sendToSheets(currentUser, idx, savedAnswers);
+
+  // L'organizador (session 0) reste toujours éditable — on ne le marque pas "done"
+  if (idx === 0) {
+    renderSession(0);
+    return;
+  }
 
   // Mark as done locally regardless (even if network failed, data is in localStorage)
   completedSessions.add(idx);
