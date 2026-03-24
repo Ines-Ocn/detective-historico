@@ -766,7 +766,7 @@ function restoreAnswers() {
 // ══════════════════════════════════════════
 //  GOOGLE SHEETS INTEGRATION
 // ══════════════════════════════════════════
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzzTNAwOYbm48KIRA4GE_MLN_DlaCtJpoUECrUXTI35YLRVjMVtyZGT6Mqo3pSjR2pH/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzcjqvxZaZ1TWslRu546qznnefb1ablZ1I6CyW-yuJEVaYUMcDVI1vH3POClH_kE0Ej/exec';
 
 const QUESTION_LABELS = {
   // Sesión 1 — Scriptorium
