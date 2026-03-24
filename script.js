@@ -7,72 +7,38 @@ let completedSessions = new Set();
 let savedAnswers = {};
 
 // ══════════════════════════════════════════
+//  HELPERS
+// ══════════════════════════════════════════
+
+// Panel organisateur commun à chaque session (avant/pendant/après)
+function orgPanel(n) {
+  return `
+    <div class="panel">
+      <div class="panel-header gold"><span class="panel-icon">🧭</span><span class="panel-title">Organizador · Reflexión de sesión</span></div>
+      <div class="panel-body">
+        <div class="question-block">
+          <span class="question-label">Antes de empezar</span>
+          <p class="question-prompt">¿Qué problema histórico real vamos a analizar hoy?</p>
+          <textarea class="answer-field" id="s${n}_org_antes" rows="2" placeholder="Escribe aquí tu respuesta inicial..."></textarea>
+        </div>
+        <div class="question-block">
+          <span class="question-label">Durante</span>
+          <p class="question-prompt">¿Qué conceptos del siglo XIII estás aplicando?</p>
+          <textarea class="answer-field" id="s${n}_org_durante" rows="2" placeholder="Anota los conceptos que vayas identificando..."></textarea>
+        </div>
+        <div class="question-block">
+          <span class="question-label">Al terminar</span>
+          <p class="question-prompt">¿Qué has aprendido sobre la sociedad medieval que no sabías antes?</p>
+          <textarea class="answer-field" id="s${n}_org_despues" rows="2" placeholder="Reflexión final de la sesión..."></textarea>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ══════════════════════════════════════════
 //  SESSION DEFINITIONS
 // ══════════════════════════════════════════
 const sessions = [
-
-  // ── SESSION 0: ORGANIZADOR ──
-  {
-    id: 0,
-    title: 'Organizador Detective Histórico',
-    type: 'intro',
-    tag: 'Introducción',
-    desc: 'Tu brújula para toda la secuencia. Consúltalo en cada sesión.',
-    render: () => `
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">🔍</span><span class="panel-title">Tu rol en esta investigación</span></div>
-        <div class="panel-body">
-          <p style="color:#2a1f0e;line-height:1.7;margin-bottom:1rem;">No memorizas datos. Usas la <strong>ficción como SIMULADOR</strong> para entender <strong>conceptos históricos reales</strong> del siglo XIII. En las sesiones con fuentes primarias, actúas como historiador que analiza documentos reales.</p>
-          <div class="checklist">
-            <div class="check-item"><input type="checkbox"> <span>He leído el fragmento o fuente de la sesión antes de hacer la actividad</span></div>
-            <div class="check-item"><input type="checkbox"> <span>Identifico qué problema histórico real estoy analizando hoy</span></div>
-            <div class="check-item"><input type="checkbox"> <span>Distingo entre lo que es ficción y lo que es documento real</span></div>
-            <div class="check-item"><input type="checkbox"> <span>Argumento con lógica histórica, no solo con intuición moderna</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">📋</span><span class="panel-title">Preguntas clave para cada sesión</span></div>
-        <div class="panel-body">
-          <div class="question-block">
-            <span class="question-label">Antes de empezar</span>
-            <p class="question-prompt">¿Qué problema histórico real vamos a analizar hoy?</p>
-            <textarea class="answer-field" id="q0_antes" rows="2" placeholder="Escribe aquí tu respuesta inicial..."></textarea>
-          </div>
-          <div class="question-block">
-            <span class="question-label">Durante</span>
-            <p class="question-prompt">¿Qué conceptos del siglo XIII estás aplicando?</p>
-            <textarea class="answer-field" id="q0_durante" rows="2" placeholder="Anota los conceptos que vayas identificando..."></textarea>
-          </div>
-          <div class="question-block">
-            <span class="question-label">Al terminar</span>
-            <p class="question-prompt">¿Qué has aprendido sobre la sociedad medieval que no sabías antes?</p>
-            <textarea class="answer-field" id="q0_despues" rows="2" placeholder="Reflexión final de la sesión..."></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">📅</span><span class="panel-title">Registro de sesiones</span></div>
-        <div class="panel-body">
-          <table class="analysis-table">
-            <thead>
-              <tr><th>Sesión</th><th>Tipo</th><th>Tema</th><th>Concepto clave que aprendí</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="label-col">1</td><td>Novela</td><td>Escuela de Traductores</td><td><input class="answer-field" id="reg1"></td></tr>
-              <tr><td class="label-col">2</td><td>Fuentes</td><td>Poder y Ley</td><td><input class="answer-field" id="reg2"></td></tr>
-              <tr><td class="label-col">3</td><td>Novela</td><td>El herrero del rey</td><td><input class="answer-field" id="reg3"></td></tr>
-              <tr><td class="label-col">4</td><td>Novela</td><td>Lengua castellana</td><td><input class="answer-field" id="reg4"></td></tr>
-              <tr><td class="label-col">5</td><td>Fuentes</td><td>Cultura y sociedad</td><td><input class="answer-field" id="reg5"></td></tr>
-              <tr><td class="label-col">6</td><td>Novela</td><td>Comercio y ética</td><td><input class="answer-field" id="reg6"></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    `
-  },
 
   // ── SESSION 1: SCRIPTORIUM ──
   {
@@ -153,6 +119,8 @@ const sessions = [
           </div>
         </div>
       </div>
+
+      ${orgPanel(1)}
     `
   },
 
@@ -211,10 +179,10 @@ const sessions = [
             <span class="question-label">3. Limitaciones de la fuente</span>
             <p class="question-prompt">Esta fuente dice lo que el rey QUERÍA que pasara. ¿Qué NO nos dice?</p>
             <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Cómo vivía realmente el pueblo llano</span></label>
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Si los nobles obedecían estas leyes</span></label>
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Qué pensaban los sabios de esto</span></label>
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Los conflictos internos del reino</span></label>
+              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Cómo vivía realmente el pueblo llano</span></label>
+              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Si los nobles obedecían estas leyes</span></label>
+              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Qué pensaban los sabios de esto</span></label>
+              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Los conflictos internos del reino</span></label>
             </div>
             <textarea class="answer-field" id="s2_limites" rows="2" placeholder="Añade otras limitaciones que identifies..."></textarea>
           </div>
@@ -268,6 +236,8 @@ const sessions = [
           </div>
         </div>
       </div>
+
+      ${orgPanel(2)}
     `
   },
 
@@ -352,6 +322,8 @@ const sessions = [
           </div>
         </div>
       </div>
+
+      ${orgPanel(3)}
     `
   },
 
@@ -420,6 +392,8 @@ const sessions = [
           </div>
         </div>
       </div>
+
+      ${orgPanel(4)}
     `
   },
 
@@ -462,10 +436,10 @@ const sessions = [
             <span class="question-label">2. Sesgos de la fuente</span>
             <p class="question-prompt">¿Qué sesgos detectas? ¿Significa eso que no sirve para el historiador?</p>
             <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Sesgo religioso (todo se explica por la fe)</span></label>
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Sesgo de clase (visión aristocrática/caballeresca)</span></label>
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Sesgo de género (perspectiva masculina)</span></label>
-              <label class="option-item"><input type="checkbox"> <span class="option-text">Sesgo político (legitimación del rey mecenas)</span></label>
+              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo religioso (todo se explica por la fe)</span></label>
+              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo de clase (visión aristocrática/caballeresca)</span></label>
+              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo de género (perspectiva masculina)</span></label>
+              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo político (legitimación del rey mecenas)</span></label>
             </div>
             <textarea class="answer-field" id="s5_cantiga2" rows="2" placeholder="¿Un sesgo hace que la fuente no sirva? Argumenta..."></textarea>
           </div>
@@ -529,6 +503,8 @@ const sessions = [
           </div>
         </div>
       </div>
+
+      ${orgPanel(5)}
     `
   },
 
@@ -624,6 +600,8 @@ const sessions = [
           </div>
         </div>
       </div>
+
+      ${orgPanel(6)}
     `
   }
 ];
@@ -645,7 +623,7 @@ function handleLogin() {
   document.getElementById('screen-login').classList.remove('active');
   document.getElementById('screen-app').classList.add('active');
   updateProgress();
-  goSession(0);
+  goSession(1);
 }
 
 function handleLogout() {
@@ -665,22 +643,22 @@ function goSession(idx) {
   currentSession = idx;
 
   // Update nav
-  document.querySelectorAll('.session-btn').forEach((btn, i) => {
-    btn.classList.remove('active');
-    if (completedSessions.has(i)) btn.classList.add('done');
+  document.querySelectorAll('.session-btn').forEach(btn => btn.classList.remove('active'));
+  sessions.forEach(s => {
+    const btn = document.getElementById('nav-' + s.id);
+    if (!btn) return;
+    if (completedSessions.has(s.id)) btn.classList.add('done');
     else btn.classList.remove('done');
   });
   document.getElementById('nav-' + idx)?.classList.add('active');
 
-  // Render
   renderSession(idx);
   document.getElementById('content-area').scrollTop = 0;
 }
 
 function renderSession(idx) {
-  const s = sessions[idx];
+  const s = sessions.find(s => s.id === idx);
   const area = document.getElementById('content-area');
-
   const tagClass = s.type === 'novela' ? 'tag-novela' : s.type === 'fuentes' ? 'tag-fuentes' : 'tag-intro';
 
   area.innerHTML = `
@@ -694,15 +672,10 @@ function renderSession(idx) {
     </div>
   `;
 
-  restoreAnswers(idx);
+  restoreAnswers();
 }
 
 function renderSubmitArea(idx) {
-  if (idx === 0) return `
-    <div class="submit-area">
-      <span class="submit-info">El organizador está siempre disponible. Puedes actualizarlo en cualquier momento.</span>
-      <button class="btn-submit" onclick="submitSession(${idx})">Guardar organizador</button>
-    </div>`;
   return `
     <div class="submit-area">
       <span class="submit-info">Revisa la autoevaluación antes de enviar. Tu código: <strong>${currentUser}</strong></span>
@@ -727,36 +700,65 @@ function renderSuccess(idx) {
 // ══════════════════════════════════════════
 function saveCurrentAnswers() {
   if (!currentUser) return;
-  // Sauvegarder les textarea et input text/number par id
-  const inputs = document.querySelectorAll('#content-area [id]');
-  inputs.forEach(el => {
+
+  // Textareas and text/number inputs (by id)
+  document.querySelectorAll('#content-area [id]').forEach(el => {
     if (el.tagName === 'TEXTAREA' || (el.tagName === 'INPUT' && el.type !== 'radio' && el.type !== 'checkbox')) {
       savedAnswers[el.id] = el.value;
     }
   });
-  // Sauvegarder les radio buttons sélectionnés par name
+
+  // Radio buttons (by name)
   document.querySelectorAll('#content-area input[type="radio"]:checked').forEach(el => {
     if (el.name) savedAnswers[el.name] = el.value;
   });
-  // Sauvegarder les rôles sélectionnés (role-card)
+
+  // Role cards
   const selectedRole = document.querySelector('#content-area .role-card.selected');
   if (selectedRole) {
     const roleInput = selectedRole.querySelector('input');
     if (roleInput && roleInput.name) savedAnswers[roleInput.name] = roleInput.value;
   }
+
+  // Checkbox groups (by name) — store checked option labels joined with "; "
+  const checkboxNames = new Set();
+  document.querySelectorAll('#content-area input[type="checkbox"][name]').forEach(el => {
+    checkboxNames.add(el.name);
+  });
+  checkboxNames.forEach(name => {
+    const checked = [];
+    document.querySelectorAll(`#content-area input[type="checkbox"][name="${name}"]:checked`).forEach(el => {
+      const label = el.closest('.option-item')?.querySelector('.option-text');
+      if (label) checked.push(label.textContent.trim());
+    });
+    savedAnswers[name] = checked.join('; ');
+  });
+
   localStorage.setItem('dh_answers_' + currentUser, JSON.stringify(savedAnswers));
 }
 
-function restoreAnswers(idx) {
+function restoreAnswers() {
   setTimeout(() => {
     Object.keys(savedAnswers).forEach(key => {
+      // Textareas and text inputs (by id)
       const el = document.getElementById(key);
       if (el && (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT')) {
         el.value = savedAnswers[key];
       }
-      // Restaurer les radio buttons (sauvegardés par name, pas id)
+
+      // Radio buttons (saved by name)
       const radio = document.querySelector(`#content-area input[type="radio"][name="${key}"][value="${savedAnswers[key]}"]`);
       if (radio) radio.checked = true;
+
+      // Checkbox groups (saved by name, value = "; "-separated labels)
+      const group = document.querySelectorAll(`#content-area input[type="checkbox"][name="${key}"]`);
+      if (group.length > 0 && savedAnswers[key]) {
+        const saved = savedAnswers[key].split('; ').filter(Boolean);
+        group.forEach(cb => {
+          const span = cb.closest('.option-item')?.querySelector('.option-text');
+          if (span && saved.includes(span.textContent.trim())) cb.checked = true;
+        });
+      }
     });
   }, 50);
 }
@@ -764,102 +766,109 @@ function restoreAnswers(idx) {
 // ══════════════════════════════════════════
 //  GOOGLE SHEETS INTEGRATION
 // ══════════════════════════════════════════
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzcjqvxZaZ1TWslRu546qznnefb1ablZ1I6CyW-yuJEVaYUMcDVI1vH3POClH_kE0Ej/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzzTNAwOYbm48KIRA4GE_MLN_DlaCtJpoUECrUXTI35YLRVjMVtyZGT6Mqo3pSjR2pH/exec';
 
 const QUESTION_LABELS = {
-  // Sesión 0 — Organizador
-  q0_antes:          'S0 · Antes de empezar — ¿Qué problema histórico real vamos a analizar hoy?',
-  q0_durante:        'S0 · Durante — ¿Qué conceptos del siglo XIII estás aplicando?',
-  q0_despues:        'S0 · Al terminar — ¿Qué has aprendido sobre la sociedad medieval?',
-  reg1:              'S0 · Registro S1 — Concepto clave aprendido',
-  reg2:              'S0 · Registro S2 — Concepto clave aprendido',
-  reg3:              'S0 · Registro S3 — Concepto clave aprendido',
-  reg4:              'S0 · Registro S4 — Concepto clave aprendido',
-  reg5:              'S0 · Registro S5 — Concepto clave aprendido',
-  reg6:              'S0 · Registro S6 — Concepto clave aprendido',
-
   // Sesión 1 — Scriptorium
-  s1_art1:           'S1 · Art. I — Definición del proyecto (objetivo y verificación)',
-  s1_art2:           'S1 · Art. II — El equipo (roles cristiano/judío/musulmán)',
-  s1_art3:           'S1 · Art. III — Ética de colaboración (respeto, autoría, conflictos)',
-  s1_art4:           'S1 · Art. IV — Gestión del conocimiento (acceso a textos)',
-  s1_reflexion:      'S1 · Reflexión — Concepto histórico del s.XIII aplicado',
+  s1_art1:              'S1 · Art. I — Definición del proyecto (objetivo y verificación)',
+  s1_art2:              'S1 · Art. II — El equipo (roles cristiano/judío/musulmán)',
+  s1_art3:              'S1 · Art. III — Ética de colaboración (respeto, autoría, conflictos)',
+  s1_art4:              'S1 · Art. IV — Gestión del conocimiento (acceso a textos)',
+  s1_reflexion:         'S1 · Reflexión — Concepto histórico del s.XIII aplicado',
+  s1_org_antes:         'S1 · Organizador — Antes de empezar',
+  s1_org_durante:       'S1 · Organizador — Durante',
+  s1_org_despues:       'S1 · Organizador — Al terminar',
 
   // Sesión 2 — Poder y Ley
-  s2_tipo:           'S2 · Fuente A — Tipo de fuente (radio)',
-  s2_identificacion: 'S2 · Fuente A — Quién produce / a quién va / con qué intención',
-  s2_c1a:            'S2 · "Rey en lugar de Dios" — Significado',
-  s2_c1b:            'S2 · "Rey en lugar de Dios" — Qué revela',
-  s2_c2a:            'S2 · "Corazón e alma del pueblo" — Significado',
-  s2_c2b:            'S2 · "Corazón e alma del pueblo" — Qué revela',
-  s2_c3a:            'S2 · "Honrar a los sabios" — Significado',
-  s2_c3b:            'S2 · "Honrar a los sabios" — Qué revela',
-  s2_limites:        'S2 · Limitaciones adicionales de la fuente A',
-  s2_pecho:          'S2 · Vocabulario — Pecho (definición)',
-  s2_fazendera:      'S2 · Vocabulario — Fazendera (definición)',
-  s2_anyo:           'S2 · Año real del documento (Era 1310−38)',
-  s2_info_historica: 'S2 · Fuente B — Información histórica sobre la sociedad del s.XIII',
-  s2_comp1:          'S2 · Comparación — ¿Qué aportan las fuentes primarias que la novela no?',
-  s2_comp2:          'S2 · Comparación — ¿Qué aportó la novela que las fuentes no?',
+  s2_tipo:              'S2 · Fuente A — Tipo de fuente (radio)',
+  s2_identificacion:    'S2 · Fuente A — Quién produce / a quién va / con qué intención',
+  s2_c1a:               'S2 · "Rey en lugar de Dios" — Significado',
+  s2_c1b:               'S2 · "Rey en lugar de Dios" — Qué revela',
+  s2_c2a:               'S2 · "Corazón e alma del pueblo" — Significado',
+  s2_c2b:               'S2 · "Corazón e alma del pueblo" — Qué revela',
+  s2_c3a:               'S2 · "Honrar a los sabios" — Significado',
+  s2_c3b:               'S2 · "Honrar a los sabios" — Qué revela',
+  s2_limites_opciones:  'S2 · Limitaciones fuente A — Opciones marcadas',
+  s2_limites:           'S2 · Limitaciones fuente A — Comentario libre',
+  s2_pecho:             'S2 · Vocabulario — Pecho (definición)',
+  s2_fazendera:         'S2 · Vocabulario — Fazendera (definición)',
+  s2_anyo:              'S2 · Año real del documento (Era 1310−38)',
+  s2_info_historica:    'S2 · Fuente B — Información histórica sobre la sociedad del s.XIII',
+  s2_comp1:             'S2 · Comparación — ¿Qué aportan las fuentes primarias que la novela no?',
+  s2_comp2:             'S2 · Comparación — ¿Qué aportó la novela que las fuentes no?',
+  s2_org_antes:         'S2 · Organizador — Antes de empezar',
+  s2_org_durante:       'S2 · Organizador — Durante',
+  s2_org_despues:       'S2 · Organizador — Al terminar',
 
   // Sesión 3 — Herrero
-  s3_invocacion:     'S3 · Invocación (fórmula inicial del privilegio)',
-  s3_relacion:       'S3 · Relación (motivos del privilegio)',
-  s3_disposicion:    'S3 · Disposición (derechos concedidos)',
-  s3_sancion:        'S3 · Sanción (consecuencias si no se respeta)',
-  s3_data:           'S3 · Data (fecha y lugar)',
-  s3_plus:           'S3 · Desafío plus — Cláusula de reciprocidad',
-  s3_reflexion:      'S3 · Reflexión — Privilegio ficticio vs. documento real de Yúçaf',
+  s3_invocacion:        'S3 · Invocación (fórmula inicial del privilegio)',
+  s3_relacion:          'S3 · Relación (motivos del privilegio)',
+  s3_disposicion:       'S3 · Disposición (derechos concedidos)',
+  s3_sancion:           'S3 · Sanción (consecuencias si no se respeta)',
+  s3_data:              'S3 · Data (fecha y lugar)',
+  s3_plus:              'S3 · Desafío plus — Cláusula de reciprocidad',
+  s3_reflexion:         'S3 · Reflexión — Privilegio ficticio vs. documento real de Yúçaf',
+  s3_org_antes:         'S3 · Organizador — Antes de empezar',
+  s3_org_durante:       'S3 · Organizador — Durante',
+  s3_org_despues:       'S3 · Organizador — Al terminar',
 
   // Sesión 4 — Lengua
-  s4_comparacion:    'S4 · Comparación — Latín vs. castellano (beneficiados/perjudicados)',
-  s4_glosa:          'S4 · Glosa crítica — Defensa del castellano (8-10 líneas)',
-  s4_actualidad:     'S4 · Reflexión — Paralelismo con debates lingüísticos actuales',
+  s4_comparacion:       'S4 · Comparación — Latín vs. castellano (beneficiados/perjudicados)',
+  s4_glosa:             'S4 · Glosa crítica — Defensa del castellano (8-10 líneas)',
+  s4_actualidad:        'S4 · Reflexión — Paralelismo con debates lingüísticos actuales',
+  s4_org_antes:         'S4 · Organizador — Antes de empezar',
+  s4_org_durante:       'S4 · Organizador — Durante',
+  s4_org_despues:       'S4 · Organizador — Al terminar',
 
   // Sesión 5 — Cultura y Sociedad
-  s5_cantiga1:       'S5 · Cantiga — Tipo de fuente y elección lingüística',
-  s5_cantiga2:       'S5 · Cantiga — Sesgos detectados y si invalidan la fuente',
-  s5_contradiccion:  'S5 · Contradicción — Alfonso X: castellano vs. gallego-portugués',
-  s5_cronica1:       'S5 · Crónica — Implicaciones de ser escrita 60 años después',
-  s5_exp1:           'S5 · Expresión valorativa 1 del cronista',
-  s5_exp2:           'S5 · Expresión valorativa 2 del cronista',
-  s5_t1a:            'S5 · Tabla Ventajas — Fuente jurídica',
-  s5_t1b:            'S5 · Tabla Ventajas — Fuente documental',
-  s5_t1c:            'S5 · Tabla Ventajas — Fuente literaria',
-  s5_t1d:            'S5 · Tabla Ventajas — Fuente cronística',
-  s5_t2a:            'S5 · Tabla Limitaciones — Fuente jurídica',
-  s5_t2b:            'S5 · Tabla Limitaciones — Fuente documental',
-  s5_t2c:            'S5 · Tabla Limitaciones — Fuente literaria',
-  s5_t2d:            'S5 · Tabla Limitaciones — Fuente cronística',
-  s5_t3a:            'S5 · Tabla Mejor para — Fuente jurídica',
-  s5_t3b:            'S5 · Tabla Mejor para — Fuente documental',
-  s5_t3c:            'S5 · Tabla Mejor para — Fuente literaria',
-  s5_t3d:            'S5 · Tabla Mejor para — Fuente cronística',
-  s5_meta:           'S5 · Metacognición — Novela histórica vs. fuente primaria',
+  s5_cantiga1:          'S5 · Cantiga — Tipo de fuente y elección lingüística',
+  s5_sesgos_opciones:   'S5 · Cantiga — Sesgos marcados',
+  s5_cantiga2:          'S5 · Cantiga — Argumentación sobre sesgos',
+  s5_contradiccion:     'S5 · Contradicción — Alfonso X: castellano vs. gallego-portugués',
+  s5_cronica1:          'S5 · Crónica — Implicaciones de ser escrita 60 años después',
+  s5_exp1:              'S5 · Expresión valorativa 1 del cronista',
+  s5_exp2:              'S5 · Expresión valorativa 2 del cronista',
+  s5_t1a:               'S5 · Tabla Ventajas — Fuente jurídica',
+  s5_t1b:               'S5 · Tabla Ventajas — Fuente documental',
+  s5_t1c:               'S5 · Tabla Ventajas — Fuente literaria',
+  s5_t1d:               'S5 · Tabla Ventajas — Fuente cronística',
+  s5_t2a:               'S5 · Tabla Limitaciones — Fuente jurídica',
+  s5_t2b:               'S5 · Tabla Limitaciones — Fuente documental',
+  s5_t2c:               'S5 · Tabla Limitaciones — Fuente literaria',
+  s5_t2d:               'S5 · Tabla Limitaciones — Fuente cronística',
+  s5_t3a:               'S5 · Tabla Mejor para — Fuente jurídica',
+  s5_t3b:               'S5 · Tabla Mejor para — Fuente documental',
+  s5_t3c:               'S5 · Tabla Mejor para — Fuente literaria',
+  s5_t3d:               'S5 · Tabla Mejor para — Fuente cronística',
+  s5_meta:              'S5 · Metacognición — Novela histórica vs. fuente primaria',
+  s5_org_antes:         'S5 · Organizador — Antes de empezar',
+  s5_org_durante:       'S5 · Organizador — Durante',
+  s5_org_despues:       'S5 · Organizador — Al terminar',
 
   // Sesión 6 — Ética
-  s6_rol:            'S6 · Rol elegido (jueces/fiscales/defensores)',
-  s6_argumentacion:  'S6 · Argumentación según rol (mín. 3 argumentos)',
-  s6_veredicto:      'S6 · Veredicto del grupo (radio)',
-  s6_fundamentacion: 'S6 · Fundamentación del veredicto (mín. 5 líneas)',
-  s6_actualidad:     'S6 · Conexión — Paralelismo con dilemas éticos actuales'
+  s6_rol:               'S6 · Rol elegido (jueces/fiscales/defensores)',
+  s6_argumentacion:     'S6 · Argumentación según rol (mín. 3 argumentos)',
+  s6_veredicto:         'S6 · Veredicto del grupo (radio)',
+  s6_fundamentacion:    'S6 · Fundamentación del veredicto (mín. 5 líneas)',
+  s6_actualidad:        'S6 · Conexión — Paralelismo con dilemas éticos actuales',
+  s6_org_antes:         'S6 · Organizador — Antes de empezar',
+  s6_org_durante:       'S6 · Organizador — Durante',
+  s6_org_despues:       'S6 · Organizador — Al terminar'
 };
 
 async function sendToSheets(code, sessionIdx, answers) {
-  // Filter only answers for this session
-  const prefix = sessionIdx === 0 ? ['q0_', 'reg'] : [`s${sessionIdx}_`];
+  const prefix = `s${sessionIdx}_`;
   const sessionAnswers = {};
   const sessionLabels = {};
 
   Object.keys(answers).forEach(k => {
-    if (prefix.some(p => k.startsWith(p))) {
+    if (k.startsWith(prefix)) {
       sessionAnswers[k] = answers[k];
       if (QUESTION_LABELS[k]) sessionLabels[k] = QUESTION_LABELS[k];
     }
   });
 
   try {
-    // POST + Content-Type text/plain : évite le preflight CORS tout en supportant un body JSON
     await fetch(SHEET_URL, {
       method: 'POST',
       mode: 'no-cors',
@@ -876,7 +885,6 @@ async function sendToSheets(code, sessionIdx, answers) {
 async function submitSession(idx) {
   saveCurrentAnswers();
 
-  // Show loading state on button
   const btn = document.querySelector('.btn-submit');
   if (btn) {
     btn.textContent = 'Enviando…';
@@ -884,16 +892,8 @@ async function submitSession(idx) {
     btn.style.opacity = '0.7';
   }
 
-  // Send to Google Sheets
   await sendToSheets(currentUser, idx, savedAnswers);
 
-  // L'organizador (session 0) reste toujours éditable — on ne le marque pas "done"
-  if (idx === 0) {
-    renderSession(0);
-    return;
-  }
-
-  // Mark as done locally regardless (even if network failed, data is in localStorage)
   completedSessions.add(idx);
   localStorage.setItem('dh_done_' + currentUser, JSON.stringify([...completedSessions]));
   updateProgress();
@@ -902,7 +902,7 @@ async function submitSession(idx) {
 }
 
 function updateProgress() {
-  const pct = (completedSessions.size / 7) * 100;
+  const pct = (completedSessions.size / 6) * 100;
   document.getElementById('progress-fill').style.width = pct + '%';
 }
 
@@ -916,9 +916,6 @@ function selectRole(el) {
 
 // ══════════════════════════════════════════
 //  EXPOSITION GLOBALE
-//  Les fonctions appelées via onclick="" dans du HTML injecté
-//  par innerHTML doivent être sur window, sinon le navigateur
-//  les cherche dans le scope global et échoue silencieusement.
 // ══════════════════════════════════════════
 window.goSession     = goSession;
 window.submitSession = submitSession;
