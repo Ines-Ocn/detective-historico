@@ -791,7 +791,7 @@
     <input class="field-input" type="text" id="code-input" placeholder="Ej: AG07" maxlength="6" autocomplete="off" autocapitalize="characters">
     <p class="field-hint">Iniciales + año de nacimiento (Ana García, 2007 → AG07)</p>
 
-    <button class="btn-primary" onclick="handleLogin()">Entrar a la investigación →</button>
+    <button class="btn-primary" id="btn-login">Entrar a la investigación →</button>
     <div class="error-msg" id="login-error">Introduce tu código personal para continuar.</div>
   </div>
 </div>
@@ -1608,12 +1608,23 @@ function renderSuccess(idx) {
 // ══════════════════════════════════════════
 function saveCurrentAnswers() {
   if (!currentUser) return;
+  // Sauvegarder les textarea et input text/number par id
   const inputs = document.querySelectorAll('#content-area [id]');
   inputs.forEach(el => {
-    if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') {
+    if (el.tagName === 'TEXTAREA' || (el.tagName === 'INPUT' && el.type !== 'radio' && el.type !== 'checkbox')) {
       savedAnswers[el.id] = el.value;
     }
   });
+  // Sauvegarder les radio buttons sélectionnés par name
+  document.querySelectorAll('#content-area input[type="radio"]:checked').forEach(el => {
+    if (el.name) savedAnswers[el.name] = el.value;
+  });
+  // Sauvegarder les rôles sélectionnés (role-card)
+  const selectedRole = document.querySelector('#content-area .role-card.selected');
+  if (selectedRole) {
+    const roleInput = selectedRole.querySelector('input');
+    if (roleInput && roleInput.name) savedAnswers[roleInput.name] = roleInput.value;
+  }
   localStorage.setItem('dh_answers_' + currentUser, JSON.stringify(savedAnswers));
 }
 
@@ -1651,14 +1662,9 @@ async function sendToSheets(code, sessionIdx, answers) {
   });
 
   try {
-    // Use an image trick to fire a GET request cross-origin without triggering CORS preflight
-    await new Promise((resolve) => {
-      const img = new Image();
-      img.onload = img.onerror = resolve;
-      img.src = SHEET_URL + '?' + params.toString();
-      // Fallback: resolve after 5s regardless
-      setTimeout(resolve, 5000);
-    });
+    // fetch avec mode no-cors : la requête arrive bien dans Apps Script
+    // (on ne peut pas lire la réponse, mais ce n'est pas nécessaire)
+    await fetch(SHEET_URL + '?' + params.toString(), { mode: 'no-cors' });
     return true;
   } catch (err) {
     console.error('Error enviando a Sheets:', err);
@@ -1707,6 +1713,7 @@ function selectRole(el) {
 document.getElementById('code-input').addEventListener('keydown', e => {
   if (e.key === 'Enter') handleLogin();
 });
+document.getElementById('btn-login').addEventListener('click', handleLogin);
 </script>
 </body>
 </html>
