@@ -1708,6 +1708,17 @@ function selectRole(el) {
 }
 
 // ══════════════════════════════════════════
+//  EXPOSITION GLOBALE
+//  Les fonctions appelées via onclick="" dans du HTML injecté
+//  par innerHTML doivent être sur window, sinon le navigateur
+//  les cherche dans le scope global et échoue silencieusement.
+// ══════════════════════════════════════════
+window.goSession     = goSession;
+window.submitSession = submitSession;
+window.selectRole    = selectRole;
+window.handleLogout  = handleLogout;
+
+// ══════════════════════════════════════════
 //  INIT
 // ══════════════════════════════════════════
 document.getElementById('code-input').addEventListener('keydown', e => {
