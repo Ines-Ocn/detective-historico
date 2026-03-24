@@ -1631,10 +1631,10 @@ function restoreAnswers(idx) {
 // ══════════════════════════════════════════
 //  GOOGLE SHEETS INTEGRATION
 // ══════════════════════════════════════════
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbx_bBNrTkysnSVmIhKgdJCZBMrV_QjBIVknWuCVZCM/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyxObTkAaXcD3_qWRfO8ls76pYxVQkf9UPeZaz4DcxeCutXQTz1ZDrlwWuE5r10Ew/exec';
 
 async function sendToSheets(code, sessionIdx, answers) {
-  // Filter only answers for this session (keys starting with s{idx}_ or s{idx} or q0_/reg)
+  // Filter only answers for this session
   const prefix = sessionIdx === 0 ? ['q0_', 'reg'] : [`s${sessionIdx}_`];
   const sessionAnswers = {};
   Object.keys(answers).forEach(k => {
@@ -1643,18 +1643,21 @@ async function sendToSheets(code, sessionIdx, answers) {
     }
   });
 
-  const payload = {
-    code,
+  // Use GET + URL params — the only method that works with Apps Script without CORS issues
+  const params = new URLSearchParams({
+    code: code,
     session: 'Sesión ' + sessionIdx,
-    answers: sessionAnswers
-  };
+    answers: JSON.stringify(sessionAnswers)
+  });
 
   try {
-    await fetch(SHEET_URL, {
-      method: 'POST',
-      mode: 'no-cors', // needed for Apps Script from local HTML
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+    // Use an image trick to fire a GET request cross-origin without triggering CORS preflight
+    await new Promise((resolve) => {
+      const img = new Image();
+      img.onload = img.onerror = resolve;
+      img.src = SHEET_URL + '?' + params.toString();
+      // Fallback: resolve after 5s regardless
+      setTimeout(resolve, 5000);
     });
     return true;
   } catch (err) {
