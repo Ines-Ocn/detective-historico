@@ -40,86 +40,81 @@ function orgPanel(n) {
 // ══════════════════════════════════════════
 const sessions = [
 
-  // ── SESSION 1: SCRIPTORIUM ──
+  // ── SESIÓN 1: La ciencia compartida — Toledo, crisol de culturas ──
   {
     id: 1,
-    title: 'Protocolo del Scriptorium',
+    title: 'La ciencia compartida — Toledo, crisol de culturas',
     type: 'novela',
-    tag: 'Sesión 1 · Novela Histórica',
-    desc: 'Escuela de Traductores de Toledo · Colaboración intercultural',
+    tag: 'Sesión 1 · Novela Histórica + Fuente Primaria',
+    desc: 'Escuela de Traductores · Las Tablas Alfonsíes · Colaboración intercultural',
     render: () => `
       <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">📖</span><span class="panel-title">Contexto — Lee antes de empezar</span></div>
+        <div class="panel-header gold"><span class="panel-icon">📖</span><span class="panel-title">Lee antes de responder</span></div>
         <div class="panel-body">
-          <ul class="context-list">
-            <li>En el siglo XIII, "traducir" era <strong>crear conocimiento nuevo</strong>, no solo cambiar palabras</li>
-            <li>Cristianos, judíos y musulmanes colaboraban en ciencia, filosofía y astronomía</li>
-            <li><strong>Ejemplo real:</strong> Isaac ben Sid (judío) y Bernardo el Arábigo (cristiano) tradujeron tratados de astronomía del árabe al castellano</li>
-            <li>Alfonso X fortalecía su reino <em>con conocimiento</em>, no solo con armas</li>
-            <li>Pregunta guía: ¿Cómo trabajar juntos sin renunciar a las propias creencias?</li>
-          </ul>
+          <p style="color:#3a2a12;font-size:0.97rem;margin-bottom:1rem;line-height:1.6;">Lee los dos textos que tu profesor te ha entregado o proyectado y responde las preguntas de forma individual.</p>
+          <div class="source-text">
+            <strong>Fragmento de novela (Extracto 2):</strong> Escena de Toledo al amanecer — Alfonso X recuerda el trabajo con sus sabios (Ibn Raghel, Alquibicio, Yehuda Ibn Moshe, Isaac Ibn Sid) elaborando las Tablas Alfonsíes.
+          </div>
+          <div class="source-text" style="border-left-color:#5577cc;">
+            <strong>Fuente primaria:</strong> Prólogo de las <em>Tablas Alfonsíes</em> — el propio Alfonso X explica por qué reunió a sabios de diferentes religiones.
+          </div>
         </div>
       </div>
-
+ 
       <div class="panel">
-        <div class="panel-header red"><span class="panel-icon">📜</span><span class="panel-title">Actividad · Protocolo del Scriptorium</span></div>
+        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Preguntas — Responde individualmente</span></div>
         <div class="panel-body">
-          <p style="color:#3a2a12;margin-bottom:1.2rem;font-size:0.98rem;">Sois el equipo de Alfonso X organizando el scriptorium toledano. Redactad un protocolo para garantizar la colaboración entre las tres culturas.</p>
-
+ 
           <div class="question-block">
-            <span class="question-label">Artículo I · Definición del proyecto</span>
-            <p class="question-prompt">¿Cuál es el objetivo específico del scriptorium y cómo verificaréis la calidad de las traducciones?</p>
-            <p class="question-hint">Pensad en qué conocimientos se van a traducir y quién supervisará el proceso</p>
-            <textarea class="answer-field" id="s1_art1" rows="4" placeholder="Objetivo, metodología de traducción y sistema de verificación..."></textarea>
+            <span class="question-label">Pregunta 1</span>
+            <p class="question-prompt">En el fragmento de la novela, ¿cómo se describe el ambiente en que Alfonso recuerda su trabajo con los sabios? ¿Qué emociones transmite?</p>
+            <textarea class="answer-field" id="s1_q1" rows="4" placeholder="Describe el ambiente y las emociones que percibes en el texto..."></textarea>
           </div>
-
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">Artículo II · El equipo</span>
-            <p class="question-prompt">¿Qué aporta cada miembro del equipo? Describid el rol del sabio cristiano, judío y musulmán, y quién dirige.</p>
-            <textarea class="answer-field" id="s1_art2" rows="4" placeholder="Sabio cristiano: aporta... | Sabio judío: aporta... | Sabio musulmán: aporta... | Director:..."></textarea>
+            <span class="question-label">Pregunta 2</span>
+            <p class="question-prompt">Según el prólogo de las <em>Tablas Alfonsíes</em>, ¿cuál es el propósito del rey al reunir a sabios de diferentes religiones?</p>
+            <textarea class="answer-field" id="s1_q2" rows="4" placeholder="Basándote en la fuente primaria, explica el propósito de Alfonso X..."></textarea>
           </div>
-
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">Artículo III · Ética de colaboración</span>
-            <p class="question-prompt">¿Cómo se respetarán las diferencias religiosas? ¿Cómo se atribuirá la autoría colectiva? ¿Cómo se resolverán las discrepancias?</p>
-            <textarea class="answer-field" id="s1_art3" rows="4" placeholder="Normas de convivencia y resolución de conflictos entre culturas..."></textarea>
+            <span class="question-label">Pregunta 3</span>
+            <p class="question-prompt">¿Qué coincidencias encuentras entre la visión de la novela y la del documento histórico? ¿Y qué diferencias?</p>
+            <div class="two-col-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:0.5rem;">
+              <div>
+                <p style="font-size:0.83rem;color:#7a6040;font-weight:600;margin-bottom:0.3rem;">COINCIDENCIAS</p>
+                <textarea class="answer-field" id="s1_q3a" rows="3" placeholder="¿En qué se parecen los dos textos?"></textarea>
+              </div>
+              <div>
+                <p style="font-size:0.83rem;color:#7a6040;font-weight:600;margin-bottom:0.3rem;">DIFERENCIAS</p>
+                <textarea class="answer-field" id="s1_q3b" rows="3" placeholder="¿En qué se diferencian?"></textarea>
+              </div>
+            </div>
           </div>
-
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">Artículo IV · Gestión del conocimiento</span>
-            <p class="question-prompt">¿El acceso a los textos traducidos será abierto o restringido? ¿Por qué? ¿Existe "propiedad intelectual" en el siglo XIII?</p>
-            <textarea class="answer-field" id="s1_art4" rows="3" placeholder="Decisión sobre acceso y justificación histórica..."></textarea>
+            <span class="question-label">Pregunta 4</span>
+            <p class="question-prompt">¿Por qué crees que Alfonso X quiso dejar constancia por escrito de su proyecto científico?</p>
+            <textarea class="answer-field" id="s1_q4" rows="4" placeholder="Reflexiona sobre las motivaciones políticas, culturales y personales del rey..."></textarea>
           </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 5</span>
+            <p class="question-prompt">¿Crees que la ciencia actual también se construye desde la colaboración entre distintas culturas? Pon un ejemplo.</p>
+            <textarea class="answer-field" id="s1_q5" rows="4" placeholder="Conecta el ejemplo medieval con la ciencia contemporánea..."></textarea>
+          </div>
+ 
         </div>
       </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">💬</span><span class="panel-title">Reflexión · Debate de cierre (recuperar al inicio de la Sesión 2)</span></div>
-        <div class="panel-body">
-          <div class="question-block">
-            <p class="question-prompt">¿Qué concepto histórico del siglo XIII has aplicado hoy en tu protocolo?</p>
-            <textarea class="answer-field" id="s1_reflexion" rows="2" placeholder="Identifica al menos un concepto clave que hayas usado..."></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">✅</span><span class="panel-title">Autoevaluación antes de enviar</span></div>
-        <div class="panel-body">
-          <div class="checklist">
-            <div class="check-item"><input type="checkbox"> <span>He pensado en cómo colaborarían culturas diferentes en el siglo XIII (no desde la perspectiva actual)</span></div>
-            <div class="check-item"><input type="checkbox"> <span>Mi protocolo sería creíble y útil en la época de Alfonso X</span></div>
-            <div class="check-item"><input type="checkbox"> <span>He mencionado al menos 2 conceptos del Organizador Detective</span></div>
-          </div>
-        </div>
-      </div>
-
+ 
       ${orgPanel(1)}
     `
   },
