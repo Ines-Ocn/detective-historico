@@ -119,483 +119,429 @@ const sessions = [
     `
   },
 
-  // ── SESSION 2: FUENTES I ──
+  // ── SESIÓN 2: El saber juzga a los reyes ──
   {
     id: 2,
-    title: 'Poder y Ley · Fuentes Primarias I',
+    title: 'El saber juzga a los reyes',
     type: 'fuentes',
     tag: 'Sesión 2 · Fuentes Primarias',
-    desc: 'Siete Partidas + Privilegio real · Analizamos documentos reales del siglo XIII',
+    desc: 'Siete Partidas · Conocimiento, poder y justicia en el pensamiento alfonsí',
     render: () => `
       <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">⚠️</span><span class="panel-title">Hoy NO es ficción</span></div>
+        <div class="panel-header blue"><span class="panel-icon">⚠️</span><span class="panel-title">Hoy trabajamos con fuentes primarias reales</span></div>
         <div class="panel-body">
-          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">Estos son <strong>documentos reales</strong> del siglo XIII escritos por gente de la época. Los analizamos como historiadores profesionales, con método crítico.</p>
+          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">Estos son <strong>documentos reales</strong> del siglo XIII. Los analizamos como historiadores: con método crítico y atención al contexto.</p>
         </div>
       </div>
-
+ 
       <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">📜</span><span class="panel-title">Fuente A · Las Siete Partidas (c. 1265)</span></div>
+        <div class="panel-header gold"><span class="panel-icon">📜</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
           <div class="source-text">
-            "El rey es puesto en la tierra en lugar de Dios para cumplir la justicia e dar a cada uno su derecho. E por ende le llamaron corazón e alma del pueblo. Ca así como el alma yace en el corazón del home, e por ella vive el cuerpo e se mantiene, así en el rey yace la justicia, que es vida e mantenimiento del pueblo de su señorío.<br><br>
-            Otrosí, debe el rey honrar e guardar a los sabios que estudiaron los saberes de las artes e de las ciencias, porque por su sabiduría se guía e se alumbra la tierra."
+            <strong>Fragmento de novela (Extracto 3):</strong><br>
+            <em>«El saber es señor y juez: los reyes juzgan la tierra, y el saber juzga a los reyes.»</em>
           </div>
-          <p class="source-attr">Partida II, Título I, Ley V (fragmento adaptado)</p>
-
-          <hr class="divider">
-
-          <div class="question-block">
-            <span class="question-label">1. Identificación de la fuente</span>
-            <p class="question-prompt">¿Qué tipo de fuente es? ¿Quién la produce, a quién va dirigida y con qué intención?</p>
-            <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="radio" name="s2_tipo" value="cronica"> <span class="option-text">Crónica histórica (narración de eventos)</span></label>
-              <label class="option-item"><input type="radio" name="s2_tipo" value="legal"> <span class="option-text">Código legal (leyes y normas)</span></label>
-              <label class="option-item"><input type="radio" name="s2_tipo" value="carta"> <span class="option-text">Carta privada</span></label>
-              <label class="option-item"><input type="radio" name="s2_tipo" value="poema"> <span class="option-text">Poema laudatorio</span></label>
-            </div>
-            <textarea class="answer-field" id="s2_identificacion" rows="2" placeholder="Quién la produce · A quién va dirigida · Con qué intención..."></textarea>
-          </div>
-
-          <div class="question-block">
-            <span class="question-label">2. Extracción de información</span>
-            <p class="question-prompt">Explica qué significa cada concepto medieval y qué revela sobre la época.</p>
-            <table class="analysis-table">
-              <thead><tr><th>Concepto en el texto</th><th>¿Qué significa?</th><th>¿Qué revela sobre la época?</th></tr></thead>
-              <tbody>
-                <tr><td class="label-col">"Rey en lugar de Dios"</td><td><textarea id="s2_c1a" rows="2"></textarea></td><td><textarea id="s2_c1b" rows="2"></textarea></td></tr>
-                <tr><td class="label-col">"Corazón e alma del pueblo"</td><td><textarea id="s2_c2a" rows="2"></textarea></td><td><textarea id="s2_c2b" rows="2"></textarea></td></tr>
-                <tr><td class="label-col">"Honrar a los sabios"</td><td><textarea id="s2_c3a" rows="2"></textarea></td><td><textarea id="s2_c3b" rows="2"></textarea></td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="question-block">
-            <span class="question-label">3. Limitaciones de la fuente</span>
-            <p class="question-prompt">Esta fuente dice lo que el rey QUERÍA que pasara. ¿Qué NO nos dice?</p>
-            <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Cómo vivía realmente el pueblo llano</span></label>
-              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Si los nobles obedecían estas leyes</span></label>
-              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Qué pensaban los sabios de esto</span></label>
-              <label class="option-item"><input type="checkbox" name="s2_limites_opciones"> <span class="option-text">Los conflictos internos del reino</span></label>
-            </div>
-            <textarea class="answer-field" id="s2_limites" rows="2" placeholder="Añade otras limitaciones que identifies..."></textarea>
+          <div class="source-text" style="border-left-color:#5577cc;">
+            <strong>Fuente primaria — Siete Partidas, Partida II, título I, ley V (fragmento):</strong><br>
+            <em>«El rey es puesto en la tierra en lugar de Dios para cumplir la justicia e dar a cada uno su derecho. E por ende le llamaron corazón e alma del pueblo. Ca así como el alma yace en el corazón del home, e por ella vive el cuerpo e se mantiene, así en el rey yace la justicia, que es vida e mantenimiento del pueblo de su señorío. Otrosí, debe el rey honrar e guardar a los sabios que estudiaron los saberes de las artes e de las ciencias, porque por su sabiduría se guía e se alumbra la tierra.»</em>
           </div>
         </div>
       </div>
-
+ 
       <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">📄</span><span class="panel-title">Fuente B · Privilegio real a un herrero (1272)</span></div>
+        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Preguntas — Responde individualmente</span></div>
         <div class="panel-body">
-          <div class="source-text">
-            "Don Alfonso, por la graçia de Dios rey de Castiella, de Toledo, de León… A quantos esta carta vieren, salud e gracia.<br><br>
-            Sepades que yo, por fazer bien e merçed a vos, maestro Yúçaf, ferrero de Toledo, por los muchos e buenos serviçios que me avedes fecho e faredes de aquí adelante, otorgovos que seades quito de todo pecho e de toda fazendera que los otros ferreros de Toledo han de dar e de fazer.<br><br>
-            E mando a todos los mis alcaldes e alguaziles e a todos los otros ofiçiales de Toledo que vos guarden este mi previllejo.<br><br>
-            Fecha en Sevilla, XVIII días de abril, era de mill e CCC e X annos."
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 1</span>
+            <p class="question-prompt">¿Qué significa la frase de la novela? Explica con tus palabras la relación entre reyes, saber y justicia.</p>
+            <textarea class="answer-field" id="s2_q1" rows="4" placeholder="Explica el significado de la frase y qué relación establece entre saber y poder..."></textarea>
           </div>
-          <p class="source-attr">Archivo Municipal de Toledo, Legajo 47, Doc. 23 — Fuente auténtica</p>
-
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">1. Vocabulario medieval</span>
-            <p class="question-prompt">Define estos términos y calcula el año real del documento.</p>
-            <table class="analysis-table">
-              <thead><tr><th>Término</th><th>Significado</th></tr></thead>
-              <tbody>
-                <tr><td class="label-col">Pecho</td><td><input id="s2_pecho"></td></tr>
-                <tr><td class="label-col">Fazendera</td><td><input id="s2_fazendera"></td></tr>
-                <tr><td class="label-col">Era 1310 − 38 = año…</td><td><input id="s2_anyo" placeholder="¿En qué año se escribió?"></td></tr>
-              </tbody>
-            </table>
+            <span class="question-label">Pregunta 2</span>
+            <p class="question-prompt">Según la ley de las <em>Partidas</em>, ¿para qué necesita el rey el saber? Haz una lista de las razones que da el texto.</p>
+            <textarea class="answer-field" id="s2_q2" rows="4" placeholder="Extrae las razones del texto y explícalas..."></textarea>
           </div>
-
+ 
+          <hr class="divider">
+ 
           <div class="question-block">
-            <span class="question-label">2. Información histórica</span>
-            <p class="question-prompt">¿Qué aprendemos sobre la sociedad del siglo XIII a partir de este documento?</p>
-            <textarea class="answer-field" id="s2_info_historica" rows="4" placeholder="Reflexiona sobre los oficios, el poder del rey, y la fiscalidad (impuestos) de la época..."></textarea>
+            <span class="question-label">Pregunta 3</span>
+            <p class="question-prompt">¿Crees que esta idea era avanzada para el siglo XIII? ¿Por qué?</p>
+            <div class="options-group" style="margin-bottom:0.8rem;">
+              <label class="option-item"><input type="radio" name="s2_avanzada" value="si"> <span class="option-text">Sí, era muy avanzada para su época</span></label>
+              <label class="option-item"><input type="radio" name="s2_avanzada" value="parcial"> <span class="option-text">Solo en algunos aspectos</span></label>
+              <label class="option-item"><input type="radio" name="s2_avanzada" value="no"> <span class="option-text">No, era normal en la Edad Media</span></label>
+            </div>
+            <textarea class="answer-field" id="s2_q3" rows="3" placeholder="Justifica tu respuesta con argumentos históricos..."></textarea>
           </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 4</span>
+            <p class="question-prompt">¿Cómo se relaciona esta concepción del saber con la labor científica e intercultural que vimos en la Sesión 1?</p>
+            <textarea class="answer-field" id="s2_q4" rows="4" placeholder="Conecta las ideas de las dos sesiones..."></textarea>
+          </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 5</span>
+            <p class="question-prompt">¿Crees que en la actualidad los gobernantes están «juzgados» por el saber (ciencia, prensa, universidades)? Argumenta.</p>
+            <textarea class="answer-field" id="s2_q5" rows="4" placeholder="Da un ejemplo concreto y argumenta tu postura..."></textarea>
+          </div>
+ 
         </div>
       </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">🔄</span><span class="panel-title">Reflexión comparativa</span></div>
-        <div class="panel-body">
-          <div class="question-block">
-            <p class="question-prompt">¿Qué te aportan estas fuentes primarias que la novela histórica (Sesión 1) NO puede darte?</p>
-            <textarea class="answer-field" id="s2_comp1" rows="3" placeholder="Piensa en precisión, autenticidad, limitaciones..."></textarea>
-          </div>
-          <div class="question-block">
-            <p class="question-prompt">¿Y qué te aportó la novela que estas fuentes NO te dan?</p>
-            <textarea class="answer-field" id="s2_comp2" rows="3" placeholder="Piensa en contexto, emoción, comprensión de las personas..."></textarea>
-          </div>
-        </div>
-      </div>
-
+ 
       ${orgPanel(2)}
     `
   },
-
-  // ── SESSION 3: HERRERO ──
+ 
+  // ── SESIÓN 3: La lengua como instrumento de poder ──
   {
     id: 3,
-    title: 'Certificado de Maestría en Herrería',
+    title: 'La lengua como instrumento de poder',
     type: 'novela',
-    tag: 'Sesión 3 · Novela Histórica',
-    desc: 'El herrero del rey · Privilegios y poder real',
+    tag: 'Sesión 3 · Novela Histórica + Fuente Primaria',
+    desc: 'El scriptorium · El castellano como lengua culta · Cantigas de Santa María',
     render: () => `
       <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">🔨</span><span class="panel-title">Contexto · Recuerda la Sesión 2</span></div>
+        <div class="panel-header gold"><span class="panel-icon">✒️</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
-          <ul class="context-list">
-            <li>En la Sesión 2 analizaste un <strong>privilegio REAL</strong> dado a Yúçaf, herrero de Toledo (1272). Usa su estructura hoy.</li>
-            <li>Los herreros medievales fabricaban armas para la guerra <em>y</em> herramientas para la agricultura</li>
-            <li>"Privilegio real" = derechos especiales dados por el rey (no pagar impuestos, taller en buen sitio, título honorífico)</li>
-            <li>"So pena de…" normalmente conllevaba multa, destierro o pérdida del oficio</li>
-          </ul>
+          <div class="source-text">
+            <strong>Fragmento de novela (Extracto 6):</strong><br>
+            <em>«Tal como estaban las cosas, el rey encontraba en su scriptorium el refugio idóneo a tanta soledad. Le gustaba conversar sobre historia, leyendas, geografía, piedras, plantas, astrología, leyes, poesía, teología... El Astrólogo había logrado fijar, asear y potenciar el castellano, creando una prosa bella, aún con pesadas cargas, pero en trance de depurarse, capaz de rivalizar con el latín y de desbancar definitivamente al latín, lengua de la clerecía y las escuelas. Había sacado la lengua romance de la cuna y la había convertido en adulta, capaz de expresar las ideas de los juglares, los herreros, los herbolarios, los mercaderes, los soldados...»</em>
+          </div>
+          <div class="source-text" style="border-left-color:#5577cc;">
+            <strong>Fuente primaria — Prólogo de las <em>Cantigas de Santa María</em> (Alfonso X):</strong><br>
+            (Texto entregado en clase por el profesor)
+          </div>
         </div>
       </div>
-
+ 
       <div class="panel">
-        <div class="panel-header red"><span class="panel-icon">📜</span><span class="panel-title">Actividad · Redacta el privilegio real</span></div>
+        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Preguntas — Responde individualmente</span></div>
         <div class="panel-body">
-          <p style="color:#3a2a12;margin-bottom:1.2rem;font-size:0.98rem;">Redacta el certificado que Alfonso X daría a un herrero toledano. Sigue la estructura del documento real que analizaste.</p>
-
+ 
           <div class="question-block">
-            <span class="question-label">Invocación (fórmula inicial)</span>
-            <textarea class="answer-field" id="s3_invocacion" rows="2" placeholder='"Alfonso, por la gracia de Dios, rey de Castilla, Toledo, León…"'></textarea>
+            <span class="question-label">Pregunta 1</span>
+            <p class="question-prompt">¿Por qué el scriptorium se presenta como un «refugio» en la novela? ¿De qué huye el rey?</p>
+            <textarea class="answer-field" id="s3_q1" rows="4" placeholder="Reflexiona sobre la situación política y personal de Alfonso X en este momento..."></textarea>
           </div>
-
-          <div class="question-block">
-            <span class="question-label">Relación (motivos del privilegio)</span>
-            <textarea class="answer-field" id="s3_relacion" rows="3" placeholder='"Atendiendo a la petición del maestro ___ y considerando su dominio del arte de la forja…"'></textarea>
-          </div>
-
-          <div class="question-block">
-            <span class="question-label">Disposición (derechos concedidos)</span>
-            <textarea class="answer-field" id="s3_disposicion" rows="3" placeholder='"Concedemos el título de maestro herrero real con derecho a…"'></textarea>
-          </div>
-
-          <div class="question-block">
-            <span class="question-label">Sanción (consecuencias si no se respeta)</span>
-            <textarea class="answer-field" id="s3_sancion" rows="2" placeholder='"Y mandamos a todos nuestros oficiales que respeten este privilegio so pena de…"'></textarea>
-          </div>
-
-          <div class="question-block">
-            <span class="question-label">Data (fecha y lugar)</span>
-            <input class="answer-field" id="s3_data" placeholder='"Dado en ___, a ___ de ___ de 1274."'>
-          </div>
-
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">⭐ Desafío plus</span>
-            <p class="question-prompt">Añade una cláusula sobre qué debe hacer el herrero A CAMBIO del privilegio. ¿Qué le pide el rey?</p>
-            <textarea class="answer-field" id="s3_plus" rows="2" placeholder="Cláusula de reciprocidad..."></textarea>
+            <span class="question-label">Pregunta 2</span>
+            <p class="question-prompt">Explica la metáfora de «sacar la lengua de la cuna y convertirla en adulta». ¿Qué representa cultural y políticamente?</p>
+            <textarea class="answer-field" id="s3_q2" rows="4" placeholder="Analiza la metáfora y explica su significado más profundo..."></textarea>
           </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">💬</span><span class="panel-title">Reflexión</span></div>
-        <div class="panel-body">
+ 
+          <hr class="divider">
+ 
           <div class="question-block">
-            <p class="question-prompt">¿En qué se parece y en qué difiere tu privilegio ficticio del documento real de Yúçaf (Sesión 2)?</p>
-            <textarea class="answer-field" id="s3_reflexion" rows="3" placeholder="Compara estructura, fórmulas, contenido..."></textarea>
+            <span class="question-label">Pregunta 3</span>
+            <p class="question-prompt">Según el prólogo de las <em>Cantigas</em>, ¿qué motivos da Alfonso X para escribir en romance?</p>
+            <textarea class="answer-field" id="s3_q3" rows="4" placeholder="Extrae y explica los motivos del prólogo..."></textarea>
           </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 4</span>
+            <p class="question-prompt">¿Qué ventajas e inconvenientes tenía escribir en romance frente al latín en el siglo XIII?</p>
+            <div class="two-col-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:0.5rem;">
+              <div>
+                <p style="font-size:0.83rem;color:#3a7d44;font-weight:600;margin-bottom:0.3rem;">VENTAJAS</p>
+                <textarea class="answer-field" id="s3_q4a" rows="3" placeholder="¿Qué ventajas tenía el romance?"></textarea>
+              </div>
+              <div>
+                <p style="font-size:0.83rem;color:#b5302a;font-weight:600;margin-bottom:0.3rem;">INCONVENIENTES</p>
+                <textarea class="answer-field" id="s3_q4b" rows="3" placeholder="¿Qué resistencias o inconvenientes había?"></textarea>
+              </div>
+            </div>
+          </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 5</span>
+            <p class="question-prompt">¿Crees que hoy en día la lengua sigue siendo un instrumento de poder? ¿Por qué?</p>
+            <textarea class="answer-field" id="s3_q5" rows="4" placeholder="Conecta con un ejemplo actual (debates lingüísticos en España u otros países)..."></textarea>
+          </div>
+ 
         </div>
       </div>
-
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">✅</span><span class="panel-title">Autoevaluación</span></div>
-        <div class="panel-body">
-          <div class="checklist">
-            <div class="check-item"><input type="checkbox"> <span>Mi documento suena a texto medieval formal (no moderno)</span></div>
-            <div class="check-item"><input type="checkbox"> <span>He seguido la estructura del privilegio real (Sesión 2)</span></div>
-            <div class="check-item"><input type="checkbox"> <span>El herrero obtiene algo valioso y concreto</span></div>
-            <div class="check-item"><input type="checkbox"> <span>Hay consecuencias claras si no se obedece</span></div>
-          </div>
-        </div>
-      </div>
-
+ 
       ${orgPanel(3)}
     `
   },
-
-  // ── SESSION 4: LENGUA ──
+ 
+  // ── SESIÓN 4: Vida urbana, oficios y marginalidad ──
   {
     id: 4,
-    title: 'Glosa sobre Política Lingüística',
+    title: 'Vida urbana, oficios y marginalidad',
     type: 'novela',
-    tag: 'Sesión 4 · Novela Histórica',
-    desc: 'La lengua castellana · Idioma como herramienta de poder',
+    tag: 'Sesión 4 · Novela Histórica + Fuente Primaria',
+    desc: 'Sevilla medieval · Lorenzo de Brujas · Fuero de Sevilla',
     render: () => `
       <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">✒️</span><span class="panel-title">Contexto</span></div>
+        <div class="panel-header gold"><span class="panel-icon">🏙️</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
-          <ul class="context-list">
-            <li>En el siglo XIII, el <strong>latín</strong> = lengua de la Iglesia, universidades y poder tradicional</li>
-            <li>El <strong>romance (castellano)</strong> = lengua del pueblo, de los reyes nuevos, del poder renovado</li>
-            <li>Traducir al castellano era <em>revolucionario</em>: más gente podía acceder al saber</li>
-            <li>Alfonso X no solo permitió el castellano: lo <strong>promovió activamente</strong> como política de Estado</li>
-          </ul>
+          <div class="source-text">
+            <strong>Fragmento de novela (Extracto 7):</strong><br>
+            <em>«Un laberinto de calles estrechas, largas y estrechísimas calles, callejas en curva, callejones que podían cruzarse tocando las paredes opuestas con ambas manos, pasadizos bordeados de ajimeces, costanillas con tenduchos de comerciantes y talleres de artesanos, calles y calles largas y más calles, cortas calles estrechas, calles largas de plateros, pellejeros, odreros, zapateros, calafates, batihojas, alcuceros, toneleros, pedreros, alfayates, herreros, alfajemes, tejedores, albarderos, caldereros, calles de alberguerías, calles con portales y portones, calles con tiendas, mesones y baños públicos [...] gentío trajinando en las plazas y placetas, vagabundos bostezando bajo los soportales [...] Al abrir la puerta, se le echó encima un tufo repentino. Olores añejos, vino malo, densidad humana, voces, jolgorio incesante.»</em>
+          </div>
+          <div class="source-text" style="border-left-color:#5577cc;">
+            <strong>Fuente primaria — <em>Fuero de Sevilla</em> (extractos adaptados):</strong><br>
+            (Texto entregado en clase por el profesor)
+          </div>
         </div>
       </div>
-
+ 
       <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">📝</span><span class="panel-title">Textos para comparar</span></div>
+        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Preguntas — Responde individualmente</span></div>
         <div class="panel-body">
-          <div class="source-text"><strong>Texto A — Fuero Juzgo en latín (s. VII):</strong><br>"Omnis homo qui in regno nostro habitat, secundum legem vivat"</div>
-          <div class="source-text"><strong>Texto B — Siete Partidas en castellano (s. XIII):</strong><br>"Todo ome que mora en nuestro regno deve bevir segund la ley"</div>
-          <div class="source-text"><strong>Texto C — Traducción alfonsí de astronomía:</strong><br>"Las estrellas fixas son aquellas que non se mudan de sus lugares"</div>
-
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 1</span>
+            <p class="question-prompt">En el fragmento de la novela, ¿qué oficios aparecen? Haz una lista e intenta explicar en qué consistía cada uno.</p>
+            <textarea class="answer-field" id="s4_q1" rows="5" placeholder="Lista los oficios y explica brevemente cada uno..."></textarea>
+          </div>
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <p class="question-prompt">¿Qué diferencias observas entre escribir en latín y en castellano? ¿A quién beneficia el uso del romance? ¿A quién perjudica?</p>
-            <textarea class="answer-field" id="s4_comparacion" rows="4" placeholder="Analiza los tres textos y reflexiona sobre acceso al saber, poder real e identidad cultural..."></textarea>
+            <span class="question-label">Pregunta 2</span>
+            <p class="question-prompt">¿Qué sensaciones (olfato, vista, oído) predominan en la descripción de la ciudad? Pon ejemplos del texto.</p>
+            <table class="analysis-table" style="margin-bottom:0.5rem;">
+              <thead><tr><th>Sentido</th><th>Ejemplo del texto</th></tr></thead>
+              <tbody>
+                <tr><td class="label-col">👁 Vista</td><td><textarea id="s4_q2a" rows="2" placeholder="Ejemplo visual del texto..."></textarea></td></tr>
+                <tr><td class="label-col">👃 Olfato</td><td><textarea id="s4_q2b" rows="2" placeholder="Ejemplo olfativo del texto..."></textarea></td></tr>
+                <tr><td class="label-col">👂 Oído</td><td><textarea id="s4_q2c" rows="2" placeholder="Ejemplo auditivo del texto..."></textarea></td></tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header red"><span class="panel-icon">⚔️</span><span class="panel-title">Actividad · Glosa crítica</span></div>
-        <div class="panel-body">
-          <p style="color:#3a2a12;margin-bottom:1rem;font-size:0.98rem;">Escribe una glosa crítica (8-10 líneas) defendiendo el uso del castellano. Debe incluir: el problema/polémica, los efectos (en acceso al saber, poder, identidad) y al menos un paralelismo con debates lingüísticos actuales.</p>
-          <textarea class="answer-field" id="s4_glosa" rows="8" placeholder="Tu glosa debe DEFENDER una postura, no solo describir. Usa argumentos del siglo XIII y conecta con la actualidad..."></textarea>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">💬</span><span class="panel-title">Reflexión</span></div>
-        <div class="panel-body">
+ 
+          <hr class="divider">
+ 
           <div class="question-block">
-            <p class="question-prompt">¿Qué paralelismo con debates lingüísticos actuales (España u otros países) has identificado?</p>
-            <textarea class="answer-field" id="s4_actualidad" rows="3" placeholder="Conecta el debate medieval con un ejemplo contemporáneo concreto..."></textarea>
+            <span class="question-label">Pregunta 3</span>
+            <p class="question-prompt">Según el <em>Fuero de Sevilla</em>, ¿cómo se ordenaba el espacio urbano? ¿Qué finalidad tenía esa regulación?</p>
+            <textarea class="answer-field" id="s4_q3" rows="4" placeholder="Explica la organización del espacio urbano según el fuero y sus objetivos..."></textarea>
           </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 4</span>
+            <p class="question-prompt">¿Qué contrastes sociales se reflejan en la novela (personajes cultos, jugadores, condenados)?</p>
+            <textarea class="answer-field" id="s4_q4" rows="4" placeholder="Analiza los diferentes grupos sociales que aparecen y el contraste entre ellos..."></textarea>
+          </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 5</span>
+            <p class="question-prompt">¿Qué similitudes y diferencias encuentras entre el mercado medieval descrito y los mercados actuales?</p>
+            <div class="two-col-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;">
+              <div>
+                <p style="font-size:0.83rem;color:#7a6040;font-weight:600;margin-bottom:0.3rem;">SIMILITUDES</p>
+                <textarea class="answer-field" id="s4_q5a" rows="3" placeholder="¿Qué persiste en los mercados actuales?"></textarea>
+              </div>
+              <div>
+                <p style="font-size:0.83rem;color:#7a6040;font-weight:600;margin-bottom:0.3rem;">DIFERENCIAS</p>
+                <textarea class="answer-field" id="s4_q5b" rows="3" placeholder="¿Qué ha cambiado radicalmente?"></textarea>
+              </div>
+            </div>
+          </div>
+ 
         </div>
       </div>
-
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">✅</span><span class="panel-title">Autoevaluación</span></div>
-        <div class="panel-body">
-          <div class="checklist">
-            <div class="check-item"><input type="checkbox"> <span>Mi glosa defiende una postura (no solo describe)</span></div>
-            <div class="check-item"><input type="checkbox"> <span>He mencionado tanto ventajas del romance como resistencias al cambio</span></div>
-            <div class="check-item"><input type="checkbox"> <span>He analizado los tres textos (A, B, C)</span></div>
-            <div class="check-item"><input type="checkbox"> <span>He conectado con algún debate lingüístico actual</span></div>
-          </div>
-        </div>
-      </div>
-
+ 
       ${orgPanel(4)}
     `
   },
-
-  // ── SESSION 5: FUENTES II ──
+ 
+  // ── SESIÓN 5: Guerra, botín y ética del comercio ──
   {
     id: 5,
-    title: 'Cultura y Sociedad · Fuentes Primarias II',
+    title: 'Guerra, botín y ética del comercio',
     type: 'fuentes',
-    tag: 'Sesión 5 · Fuentes Primarias',
-    desc: 'Cantiga de Santa María + Crónica · Sesgos y credibilidad',
+    tag: 'Sesión 5 · Novela Histórica + Fuente Primaria',
+    desc: 'Comercio de posguerra · Crónica de Alfonso X · Dilemas éticos medievales y actuales',
     render: () => `
       <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">⚠️</span><span class="panel-title">Hoy tampoco es ficción</span></div>
-        <div class="panel-body">
-          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">Documentos reales del siglo XIII. Hoy veremos que <strong>incluso las fuentes auténticas tienen sesgos</strong>. Eso no las hace inútiles: las hace más interesantes de analizar.</p>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">🎵</span><span class="panel-title">Fuente A · Cantiga de Santa María 166 (c. 1270)</span></div>
+        <div class="panel-header gold"><span class="panel-icon">⚔️</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
           <div class="source-text">
-            <em>"Quen a Virgen ben servirá / a seu partir non morrerá / sen confisson.<br><br>
-            Dest' avẽo en Ultramar / a un bon cavaleiro, / que Deus quis d'esta vida sacar / por seu mort' avẽedeyro.<br><br>
-            E jazendo en gran lazeir, / rog' a Deus con grand' afan / que lle desse confesseir / ante que passass' alén."</em>
+            <strong>Fragmento de novela (Extracto 8):</strong><br>
+            <em>«Los comerciantes vendían espadas, anillos y telas aún manchadas de sangre. Unos decían que venían de botines de guerra. Otros, que eran herencia sin dueño.»</em>
           </div>
-          <div class="source-text" style="border-left-color:#8b7355;">
-            <strong>Traducción:</strong> "Quien bien sirva a la Virgen / al partir no morirá sin confesión. / Esto sucedió en Ultramar / a un buen caballero / que Dios quiso sacar de esta vida. / Y yaciendo en gran dolor / rogó a Dios que le diese confesor / antes que pasase al más allá."
+          <div class="source-text" style="border-left-color:#5577cc;">
+            <strong>Fuente primaria — <em>Crónica de Alfonso X</em>, capítulo sobre la toma de Niebla (1262), adaptado:</strong><br>
+            (Texto entregado en clase por el profesor)
           </div>
-
+        </div>
+      </div>
+ 
+      <div class="panel">
+        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Preguntas — Responde individualmente</span></div>
+        <div class="panel-body">
+ 
+          <div class="question-block">
+            <span class="question-label">Pregunta 1</span>
+            <p class="question-prompt">Según la novela, ¿qué objetos se venden en el mercado y qué explicaciones dan los vendedores?</p>
+            <textarea class="answer-field" id="s5_q1" rows="4" placeholder="Describe los objetos y analiza las justificaciones que dan los comerciantes..."></textarea>
+          </div>
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">1. Identificación y análisis</span>
-            <p class="question-prompt">¿Qué tipo de fuente es? ¿Por qué es significativo que Alfonso X patrocinara poesía en gallego-portugués y NO en latín?</p>
-            <textarea class="answer-field" id="s5_cantiga1" rows="3" placeholder="Tipo de fuente y reflexión sobre la elección lingüística..."></textarea>
+            <span class="question-label">Pregunta 2</span>
+            <p class="question-prompt">Según la crónica, ¿cómo se obtenía el botín y cómo se repartía?</p>
+            <textarea class="answer-field" id="s5_q2" rows="4" placeholder="Extrae la información de la fuente primaria sobre el botín de guerra..."></textarea>
           </div>
-
+ 
+          <hr class="divider">
+ 
           <div class="question-block">
-            <span class="question-label">2. Sesgos de la fuente</span>
-            <p class="question-prompt">¿Qué sesgos detectas? ¿Significa eso que no sirve para el historiador?</p>
+            <span class="question-label">Pregunta 3</span>
+            <p class="question-prompt">¿Crees que en la Edad Media se planteaban dudas éticas sobre comerciar con objetos saqueados? ¿Por qué?</p>
             <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo religioso (todo se explica por la fe)</span></label>
-              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo de clase (visión aristocrática/caballeresca)</span></label>
-              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo de género (perspectiva masculina)</span></label>
-              <label class="option-item"><input type="checkbox" name="s5_sesgos_opciones"> <span class="option-text">Sesgo político (legitimación del rey mecenas)</span></label>
+              <label class="option-item"><input type="radio" name="s5_etica" value="si"> <span class="option-text">Sí, había debate ético claro</span></label>
+              <label class="option-item"><input type="radio" name="s5_etica" value="parcial"> <span class="option-text">Solo desde la perspectiva religiosa</span></label>
+              <label class="option-item"><input type="radio" name="s5_etica" value="no"> <span class="option-text">No, era una práctica totalmente aceptada</span></label>
             </div>
-            <textarea class="answer-field" id="s5_cantiga2" rows="2" placeholder="¿Un sesgo hace que la fuente no sirva? Argumenta..."></textarea>
+            <textarea class="answer-field" id="s5_q3" rows="3" placeholder="Argumenta tu respuesta con información histórica..."></textarea>
           </div>
-
-          <div class="question-block">
-            <span class="question-label">3. La aparente contradicción</span>
-            <p class="question-prompt">Alfonso X promueve el castellano (Sesión 4) pero escribe las Cantigas en gallego-portugués. ¿Cuál es tu hipótesis?</p>
-            <textarea class="answer-field" id="s5_contradiccion" rows="3" placeholder="¿Contradicción real o tiene una explicación histórica lógica?..."></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">📖</span><span class="panel-title">Fuente B · Crónica de Alfonso X (c. 1344)</span></div>
-        <div class="panel-body">
-          <div class="source-text">
-            "E el Rey don Alfonso, que amava mucho el saber, fizo ayuntar muchos maestros de astronomía e de las otras ciencias en Toledo. E fizo trasladar del arávigo al latín, e después al romance, muchos libros de filosofía e de las estrellas e de física.<br><br>
-            Pero acaesció que en su tiempo, por las grandes despensas que fazía en estas cosas e en la demanda del Imperio, fue muy menguado de aver. E por esta razón, e porque fazía grandes premas a los homes de sus reynos, fue muy mal quisto de los grandes e de los pequeños.<br><br>
-            E vino a tan gran desaventura que su fijo don Sancho se levantó contra él e le tomó casi todo el reyno. E el Rey don Alfonso murió en Sevilla muy despechado e pobre."
-          </div>
-          <p class="source-attr">Crónica de Alfonso X, cap. 73 — escrita ~60 años después de su muerte</p>
-
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">1. Contextualización crítica</span>
-            <p class="question-prompt">La crónica se escribe 60 años después de Alfonso X, bajo Alfonso XI. ¿Qué implicaciones tiene para su credibilidad?</p>
-            <textarea class="answer-field" id="s5_cronica1" rows="3" placeholder="Reflexiona sobre distancia temporal, acceso a la información, posibles motivos políticos del cronista..."></textarea>
+            <span class="question-label">Pregunta 4</span>
+            <p class="question-prompt">¿Conoces algún ejemplo actual de comercio con bienes procedentes de conflictos bélicos (diamantes de sangre, antigüedades expoliadas, etc.)?</p>
+            <textarea class="answer-field" id="s5_q4" rows="4" placeholder="Describe el ejemplo y compáralo con la situación medieval..."></textarea>
           </div>
-
+ 
+          <hr class="divider">
+ 
           <div class="question-block">
-            <span class="question-label">2. Expresiones valorativas</span>
-            <p class="question-prompt">Copia dos expresiones del texto que revelan el <em>juicio</em> del cronista (no solo descripción, sino valoración).</p>
-            <input class="answer-field" id="s5_exp1" placeholder="Expresión 1:">
-            <input class="answer-field" id="s5_exp2" placeholder="Expresión 2:" style="margin-top:0.5rem;">
+            <span class="question-label">Pregunta 5 — Dilema ético</span>
+            <p class="question-prompt">Imagina que eres un mercader medieval. ¿Aceptarías comprar y vender esos objetos? Argumenta tu decisión.</p>
+            <div class="role-cards" style="margin-bottom:0.8rem;">
+              <label class="role-card" onclick="selectRole(this)">
+                <input type="radio" name="s5_decision" value="si">
+                <span class="role-emoji">✅</span>
+                <span class="role-name">Sí compraría</span>
+              </label>
+              <label class="role-card" onclick="selectRole(this)">
+                <input type="radio" name="s5_decision" value="depende">
+                <span class="role-emoji">⚖️</span>
+                <span class="role-name">Dependería</span>
+              </label>
+              <label class="role-card" onclick="selectRole(this)">
+                <input type="radio" name="s5_decision" value="no">
+                <span class="role-emoji">❌</span>
+                <span class="role-name">No compraría</span>
+              </label>
+            </div>
+            <textarea class="answer-field" id="s5_q5" rows="4" placeholder="Justifica tu decisión usando valores medievales (ley, religión, honor) y razonamiento propio..."></textarea>
           </div>
+ 
         </div>
       </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">🗂️</span><span class="panel-title">Síntesis comparativa · Las 4 fuentes primarias</span></div>
-        <div class="panel-body">
-          <p style="color:#2a1f0e;margin-bottom:1rem;font-size:0.97rem;">Has analizado 4 tipos de fuente a lo largo de las sesiones 2 y 5. Compáralas.</p>
-          <table class="analysis-table">
-            <thead><tr><th>Criterio</th><th>Jurídica (Siete Partidas)</th><th>Documental (Privilegio)</th><th>Literaria (Cantiga)</th><th>Cronística (Crónica)</th></tr></thead>
-            <tbody>
-              <tr><td class="label-col">Ventajas</td><td><textarea id="s5_t1a" rows="3"></textarea></td><td><textarea id="s5_t1b" rows="3"></textarea></td><td><textarea id="s5_t1c" rows="3"></textarea></td><td><textarea id="s5_t1d" rows="3"></textarea></td></tr>
-              <tr><td class="label-col">Limitaciones</td><td><textarea id="s5_t2a" rows="3"></textarea></td><td><textarea id="s5_t2b" rows="3"></textarea></td><td><textarea id="s5_t2c" rows="3"></textarea></td><td><textarea id="s5_t2d" rows="3"></textarea></td></tr>
-              <tr><td class="label-col">Mejor para conocer…</td><td><textarea id="s5_t3a" rows="2"></textarea></td><td><textarea id="s5_t3b" rows="2"></textarea></td><td><textarea id="s5_t3c" rows="2"></textarea></td><td><textarea id="s5_t3d" rows="2"></textarea></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">🧠</span><span class="panel-title">Reflexión metacognitiva</span></div>
-        <div class="panel-body">
-          <div class="question-block">
-            <p class="question-prompt">Después de 3 sesiones con novela y 2 con fuentes primarias: ¿en qué se diferencia tu forma de leer una novela histórica de tu forma de analizar una fuente primaria?</p>
-            <textarea class="answer-field" id="s5_meta" rows="4" placeholder="Esta reflexión es la más importante de toda la secuencia. Tómate el tiempo necesario..."></textarea>
-          </div>
-        </div>
-      </div>
-
+ 
       ${orgPanel(5)}
     `
   },
-
-  // ── SESSION 6: ÉTICA ──
+ 
+  // ── SESIÓN 6: Discusión grabada — Grupo focal ──
   {
     id: 6,
-    title: 'Dictamen Ético sobre Comercio',
-    type: 'novela',
-    tag: 'Sesión 6 · Novela Histórica',
-    desc: 'Comercio tras la guerra · Dilemas éticos medievales y actuales',
+    title: 'Discusión final — Feedback cualitativo',
+    type: 'fuentes',
+    tag: 'Sesión 6 · Grupo Focal · Reflexión Metacognitiva',
+    desc: 'Debate guiado · Reflexión sobre el método · Percepción de la novela histórica vs. fuentes',
     render: () => `
       <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">⚖️</span><span class="panel-title">El caso</span></div>
+        <div class="panel-header blue"><span class="panel-icon">🎙️</span><span class="panel-title">Esta sesión es diferente</span></div>
         <div class="panel-body">
-          <div class="source-text" style="font-style:normal;">
-            Un mercader vende espadas y anillos "manchados de sangre". Afirma que son <em>herencia sin dueño</em>. Otros denuncian que son botín de guerra robado ilegítimamente.
-          </div>
-          <ul class="context-list" style="margin-top:1rem;">
-            <li>El botín de guerra medieval tenía <strong>reglas precisas</strong>: qué se podía tomar y de quién</li>
-            <li>La Iglesia prohibía aprovecharse injustamente de los vencidos</li>
-            <li>"Herencia sin dueño" era una excusa habitual para legalizar el botín</li>
-            <li>Dilema real: necesidad económica <em>vs.</em> ética religiosa y honor</li>
-          </ul>
+          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">Durante las cinco sesiones anteriores habéis trabajado individualmente con fragmentos de novela histórica y documentos reales del siglo XIII. Hoy compartimos en grupo vuestras impresiones. La conversación se grabará (con vuestro consentimiento) para la investigación. <strong>No es una evaluación</strong>, sino un espacio para expresar libremente vuestras percepciones.</p>
         </div>
       </div>
-
+ 
       <div class="panel">
-        <div class="panel-header red"><span class="panel-icon">🎭</span><span class="panel-title">Tu rol en el debate</span></div>
+        <div class="panel-header gold"><span class="panel-icon">💬</span><span class="panel-title">Preguntas guía del debate (discutidas en grupo)</span></div>
         <div class="panel-body">
-          <p style="color:#3a2a12;margin-bottom:1rem;">Elige el rol de tu grupo para el debate:</p>
-          <div class="role-cards">
-            <label class="role-card" onclick="selectRole(this)">
-              <input type="radio" name="s6_rol" value="jueces">
-              <span class="role-emoji">⚖️</span>
-              <span class="role-name">Jueces</span>
-            </label>
-            <label class="role-card" onclick="selectRole(this)">
-              <input type="radio" name="s6_rol" value="fiscales">
-              <span class="role-emoji">⚔️</span>
-              <span class="role-name">Fiscales</span>
-            </label>
-            <label class="role-card" onclick="selectRole(this)">
-              <input type="radio" name="s6_rol" value="defensores">
-              <span class="role-emoji">🛡️</span>
-              <span class="role-name">Defensores</span>
-            </label>
-          </div>
-          <p style="font-size:0.84rem;color:#7a6040;font-style:italic;">Jueces: decidís tras escuchar · Fiscales: argumentáis contra la venta · Defensores: argumentáis a favor</p>
+          <ol style="color:#3a2a12;font-size:0.95rem;line-height:1.8;padding-left:1.2rem;">
+            <li><strong>Apertura:</strong> ¿Qué es lo que más os ha sorprendido o llamado la atención de Alfonso X y su época a través de los fragmentos trabajados?</li>
+            <li><strong>Comparación metodológica:</strong> ¿Cómo compararíais aprender historia con estos fragmentos frente a cómo lo hacéis habitualmente con el libro de texto?</li>
+            <li><strong>Comprensión histórica:</strong> ¿Creéis que los fragmentos de novela os han ayudado a entender mejor el contexto histórico? ¿Por qué?</li>
+            <li><strong>Fuentes primarias:</strong> ¿Qué os ha parecido leer documentos reales del siglo XIII? ¿Os resultaron útiles, difíciles, interesantes?</li>
+            <li><strong>Empatía histórica:</strong> ¿Os habéis sentido más cerca de los personajes históricos al leer la novela?</li>
+            <li><strong>Pensamiento crítico:</strong> ¿Cómo habéis distinguido lo que es ficción de lo que es real?</li>
+            <li><strong>Motivación:</strong> ¿Esta forma de trabajar ha cambiado vuestro interés por la historia?</li>
+            <li><strong>Cierre:</strong> Si tuvierais que recomendar o no este método, ¿qué diríais?</li>
+          </ol>
         </div>
       </div>
-
+ 
       <div class="panel">
-        <div class="panel-header red"><span class="panel-icon">📋</span><span class="panel-title">Argumentación y veredicto</span></div>
+        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Reflexión escrita individual (después del debate)</span></div>
         <div class="panel-body">
+          <p style="color:#3a2a12;font-size:0.95rem;margin-bottom:1rem;line-height:1.6;">Una vez terminada la discusión en grupo, responde individualmente estas preguntas escritas.</p>
+ 
           <div class="question-block">
-            <span class="question-label">Argumentación según tu rol</span>
-            <p class="question-prompt">Desarrolla los argumentos desde tu posición. Usa valores medievales (ley, religión, honor) Y razonamiento propio.</p>
-            <textarea class="answer-field" id="s6_argumentacion" rows="5" placeholder="Desarrolla al menos 3 argumentos sólidos desde tu rol..."></textarea>
+            <span class="question-label">Reflexión 1</span>
+            <p class="question-prompt">¿Qué idea o comentario de la discusión te ha parecido más interesante o te ha hecho cambiar de opinión?</p>
+            <textarea class="answer-field" id="s6_q1" rows="4" placeholder="Recoge la idea que más te haya impactado del debate grupal..."></textarea>
           </div>
-
+ 
           <hr class="divider">
-
+ 
           <div class="question-block">
-            <span class="question-label">Veredicto del grupo</span>
+            <span class="question-label">Reflexión 2</span>
+            <p class="question-prompt">Después de la discusión, ¿cambiarías algo de tu opinión inicial sobre el uso de la novela histórica en clase de Historia?</p>
             <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="radio" name="s6_veredicto" value="vender"> <span class="option-text">Se puede vender — es legítimo</span></label>
-              <label class="option-item"><input type="radio" name="s6_veredicto" value="confiscar"> <span class="option-text">Debe confiscarse — es ilegal</span></label>
-              <label class="option-item"><input type="radio" name="s6_veredicto" value="legal-inmoral"> <span class="option-text">Legal pero inmoral — zona gris</span></label>
+              <label class="option-item"><input type="radio" name="s6_cambio" value="si"> <span class="option-text">Sí, he cambiado mi opinión</span></label>
+              <label class="option-item"><input type="radio" name="s6_cambio" value="parcial"> <span class="option-text">He matizado algunos aspectos</span></label>
+              <label class="option-item"><input type="radio" name="s6_cambio" value="no"> <span class="option-text">No, mi opinión se mantiene igual</span></label>
             </div>
-            <textarea class="answer-field" id="s6_fundamentacion" rows="5" placeholder="Fundamentación (mínimo 5 líneas): basa tu decisión en 1) valores medievales, 2) valores actuales, 3) consecuencias sociales de cada opción..."></textarea>
+            <textarea class="answer-field" id="s6_q2" rows="3" placeholder="Explica si ha cambiado tu visión y por qué..."></textarea>
           </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">🌍</span><span class="panel-title">Conexión con la actualidad</span></div>
-        <div class="panel-body">
+ 
+          <hr class="divider">
+ 
           <div class="question-block">
-            <p class="question-prompt">¿Qué paralelismos encuentras con problemas éticos actuales del comercio?</p>
-            <p class="question-hint">Piensa en minerales de conflicto (coltán, diamantes), venta de armas a países en guerra, comercio de bienes de origen dudoso…</p>
-            <textarea class="answer-field" id="s6_actualidad" rows="4" placeholder="Conecta el dilema medieval con un caso contemporáneo concreto..."></textarea>
+            <span class="question-label">Reflexión 3 — Valoración global</span>
+            <p class="question-prompt">En general, ¿cómo valoras esta secuencia de 6 sesiones combinando novela histórica y fuentes primarias?</p>
+            <div class="options-group" style="margin-bottom:0.8rem;">
+              <label class="option-item"><input type="radio" name="s6_valoracion" value="muy_positiva"> <span class="option-text">Muy positiva — lo recomendaría</span></label>
+              <label class="option-item"><input type="radio" name="s6_valoracion" value="positiva"> <span class="option-text">Positiva — aunque con algunos matices</span></label>
+              <label class="option-item"><input type="radio" name="s6_valoracion" value="neutra"> <span class="option-text">Neutra — ni mejor ni peor que el método habitual</span></label>
+              <label class="option-item"><input type="radio" name="s6_valoracion" value="negativa"> <span class="option-text">Negativa — prefiero el método tradicional</span></label>
+            </div>
+            <textarea class="answer-field" id="s6_q3" rows="4" placeholder="Argumenta tu valoración global con ejemplos concretos de las sesiones..."></textarea>
           </div>
+ 
+          <hr class="divider">
+ 
+          <div class="question-block">
+            <span class="question-label">Reflexión 4 — Metacognición</span>
+            <p class="question-prompt">Después de 5 sesiones trabajando entre novela histórica y fuentes primarias: ¿en qué se diferencia tu forma de leer una novela histórica de tu forma de analizar una fuente primaria?</p>
+            <textarea class="answer-field" id="s6_q4" rows="5" placeholder="Esta reflexión es de las más importantes de toda la secuencia. Tómate el tiempo necesario..."></textarea>
+          </div>
+ 
         </div>
       </div>
-
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">✅</span><span class="panel-title">Autoevaluación final</span></div>
-        <div class="panel-body">
-          <div class="checklist">
-            <div class="check-item"><input type="checkbox"> <span>Hemos considerado ambos lados del debate aunque tengamos un rol</span></div>
-            <div class="check-item"><input type="checkbox"> <span>La fundamentación usa valores MEDIEVALES, no solo intuición moderna</span></div>
-            <div class="check-item"><input type="checkbox"> <span>La conexión con la actualidad es concreta (no vaga)</span></div>
-          </div>
-        </div>
-      </div>
-
+ 
       ${orgPanel(6)}
     `
   }
