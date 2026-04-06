@@ -290,14 +290,14 @@ Y lo que quiero es decir loor de la Virgen, Madre de Nuestro Señor, Santa Marí
  
           <div class="question-block">
             <span class="question-label">Pregunta 4</span>
-            <p class="question-prompt">¿Qué ventajas e inconvenientes tenía escribir en romance frente al latín en el siglo XIII?</p>
+            <p class="question-prompt">A partir de los dos textos, ¿qué ventajas tenía para Alfonso X escribir en romance en lugar de en latín? ¿Qué resistencias podía encontrar?</p>
             <div class="two-col-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:0.5rem;">
               <div>
                 <p style="font-size:0.83rem;color:#3a7d44;font-weight:600;margin-bottom:0.3rem;">VENTAJAS</p>
                 <textarea class="answer-field" id="s3_q4a" rows="3" placeholder="¿Qué ventajas tenía el romance?"></textarea>
               </div>
               <div>
-                <p style="font-size:0.83rem;color:#b5302a;font-weight:600;margin-bottom:0.3rem;">INCONVENIENTES</p>
+                <p style="font-size:0.83rem;color:#b5302a;font-weight:600;margin-bottom:0.3rem;">RESISTENCIAS</p>
                 <textarea class="answer-field" id="s3_q4b" rows="3" placeholder="¿Qué resistencias o inconvenientes había?"></textarea>
               </div>
             </div>
