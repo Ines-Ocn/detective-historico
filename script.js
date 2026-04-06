@@ -53,7 +53,7 @@ const sessions = [
         <div class="panel-body">
           <p style="color:#3a2a12;font-size:0.97rem;margin-bottom:1rem;line-height:1.6;">Lee los dos textos que tu profesor te ha entregado o proyectado y responde las preguntas de forma individual.</p>
           <div class="source-text">
-            <strong>Fragmento de novela (Extracto 2):</strong> Escena de Toledo al amanecer — en el alcázar de Toledo los sabios cristianos, musulmanes y judíos
+            <strong>Fragmento de novela:</strong> "En el alcázar de Toledo los sabios cristianos, musulmanes y judíos
 también llevaban a cabo trabajos importantes, sobre todo la conclusión de la
 General Historia y la traducción y composición de algunas obras
 astrológicas.
@@ -86,7 +86,7 @@ con sus enseñanzas y lecciones de sabiduría servían de ejemplos para la
 vida.
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
-            <strong>Fuente primaria:</strong> Prólogo de las <em>Tablas Alfonsíes</em> — el propio Alfonso X explica por qué reunió a sabios de diferentes religiones.
+            <strong>Fuente primaria:</strong> Prólogo del <em>Libro de las Tablas</em> — "Porque la ciençia de la astrologia es cosa que no se puede averiguar sino por rectificamientos e los rectificamientos que tienen los sabios que cumplen en esta cosa no los puede complir un hombre porque no se puede complir en vida de un hombre. mas quando se cumple cumplese por obra de muchos hombres obrando uno em pos de otro en luengos tiempos (...) En esta sason paresçio el reynado fortunado et ayudado de Dios el reyno del muy alto y muy noble señor Rey don Alonso que Dios mantenga. E porque amava los saberes e los preçiava. mandoles haser los ynstrumentos que dixo Ptholomeo en su libro del Almagesto (...) E mandonos retificar en la çibdad de Toledo ques una de las çibdades prinçipales de España. guardela Dios (...) E posimos nombre a este libro el libro de las tablas alfonsies porque fue fecho y copilado por su mandado
           </div>
         </div>
       </div>
@@ -168,12 +168,12 @@ vida.
         <div class="panel-header gold"><span class="panel-icon">📜</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
           <div class="source-text">
-            <strong>Fragmento de novela (Extracto 3):</strong><br>
+            <strong>Fragmento de novela:</strong><br>
             <em>«El saber es señor y juez: los reyes juzgan la tierra, y el saber juzga a los reyes.»</em>
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
             <strong>Fuente primaria — Siete Partidas, Partida II, título I, ley V (fragmento):</strong><br>
-            <em>«El rey es puesto en la tierra en lugar de Dios para cumplir la justicia e dar a cada uno su derecho. E por ende le llamaron corazón e alma del pueblo. Ca así como el alma yace en el corazón del home, e por ella vive el cuerpo e se mantiene, así en el rey yace la justicia, que es vida e mantenimiento del pueblo de su señorío. Otrosí, debe el rey honrar e guardar a los sabios que estudiaron los saberes de las artes e de las ciencias, porque por su sabiduría se guía e se alumbra la tierra.»</em>
+            <em>«et los santos dixeron que el rey es señor puesto en la tierra en lugar de Dios para complir la justicia et dar a cada uno su derecho, et por ende lo llamaron corazón et alma del pueblo; ca así como el alma yace en el corazón del home, et por ella vive el cuerpo et se mantiene, así en el rey yace la justicia, que es vida et mantenimiento del pueblo de su señorío. Et bien otrosí como el corazón es uno, et por é! reciben todos los otros miembros unidat para seer cuerpo, bien así todos los del regno, maguer sean muchos, porque el rey es et debe seer uno, por eso deben otrosí todos seer unos con él para servirle et ayudarle en las cosas que él ha de facer. Et naturalmente dixieron los sabios que el rey es cabeza del regno; ca así como de la cabeza nacen los sentidos, por que se mandan todos los miembros del cuerpo, bien así por el mandamiento que nace del rey, que es señor et cabeza de todos los del regno, se deben mandar, et guiar et haber un acuerdo con él para obedescerle, et amparar, et guardar et endereszar el regno onde él es alma et cabeza, et ellos los miembros.»</em>
           </div>
         </div>
       </div>
@@ -244,8 +244,8 @@ vida.
         <div class="panel-header gold"><span class="panel-icon">✒️</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
           <div class="source-text">
-            <strong>Fragmento de novela (Extracto 6):</strong><br>
-            <em>«Tal como estaban las cosas, el rey encontraba en su scriptorium el refugio idóneo a tanta soledad. Le gustaba conversar sobre historia, leyendas, geografía, piedras, plantas, astrología, leyes, poesía, teología... El Astrólogo había logrado fijar, asear y potenciar el castellano, creando una prosa bella, aún con pesadas cargas, pero en trance de depurarse, capaz de rivalizar con el latín y de desbancar definitivamente al latín, lengua de la clerecía y las escuelas. Había sacado la lengua romance de la cuna y la había convertido en adulta, capaz de expresar las ideas de los juglares, los herreros, los herbolarios, los mercaderes, los soldados...»</em>
+            <strong>Fragmento de novela:</strong><br>
+            <em>«Tal como estaban las cosas, el rey encontraba en su scriptorium el refugio idóneo a tanta soledad. En él departía con los hombres que sacaban adelante sus proyectos y con otros sabios que, venidos de tierras diversas, acogía en él para iniciar otros nuevos. Le gustaba conversar sobre historia, leyendas, geografía, piedras, plantas, astrología, leyes, poesía, teología y otras materias que nunca saciaban su incontenible necesidad de aprender. A su vez, el rey les contaba lo que hacían sus sabios de Toledo, los avances en el libro de la Estoria de España, las traducciones emprendidas recientemente y las observaciones nocturnas de los planetas y estrellas desde el castillo de San Servando, al otro lado del río Tajo. Les hablaba también de algo que para él se había convertido en un asunto capital de su tarea como hombre de saber que deseaba propagar el conocimiento de manera general: conseguir para el castellano la misma categoría intelectual como lengua de expresión escrita que poseía el latín. Así, había sacado la lengua romance de la cuna y la había convertido en adulta, tomándola de la boca de los juglares, los herreros, los herbolarios, los mercaderes, los soldados y toda la gente de la calle para otorgarle la dignidad que daba la tinta sobre un folio de pergamino. El Astrólogo había logrado fijar, asear y potenciar el castellano, creando una prosa bella, aún con pesadas cargas, pero en trance de depurarse y extenderse hasta desbancar definitivamente al latín, lengua de la clerecía y las escuelas. Al menos así, entre sus sabios y sus libros, se sentía menos solo y más dispuesto. Bien es cierto que cada vez veía peor y que su vejez se acrecentaba con los achaques. Paseos por los jardines del alcázar, algunas partidas de ajedrez y el descanso frecuente lo fortalecían en su ánimo ante las adversidades que venían de fuera.»</em>
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
             <strong>Fuente primaria — Prólogo de las <em>Cantigas de Santa María</em> (Alfonso X):</strong><br>
@@ -324,8 +324,8 @@ vida.
         <div class="panel-header gold"><span class="panel-icon">🏙️</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
           <div class="source-text">
-            <strong>Fragmento de novela (Extracto 7):</strong><br>
-            <em>«Un laberinto de calles estrechas, largas y estrechísimas calles, callejas en curva, callejones que podían cruzarse tocando las paredes opuestas con ambas manos, pasadizos bordeados de ajimeces, costanillas con tenduchos de comerciantes y talleres de artesanos, calles y calles largas y más calles, cortas calles estrechas, calles largas de plateros, pellejeros, odreros, zapateros, calafates, batihojas, alcuceros, toneleros, pedreros, alfayates, herreros, alfajemes, tejedores, albarderos, caldereros, calles de alberguerías, calles con portales y portones, calles con tiendas, mesones y baños públicos [...] gentío trajinando en las plazas y placetas, vagabundos bostezando bajo los soportales [...] Al abrir la puerta, se le echó encima un tufo repentino. Olores añejos, vino malo, densidad humana, voces, jolgorio incesante.»</em>
+            <strong>Fragmento de novela:</strong><br>
+            <em>«Un laberinto de calles estrechas, largas y estrechísimas calles, callejas en curva, callejones que podían cruzarse tocando las paredes opuestas con ambas manos, pasadizos bordeados de ajimeces, costanillas con tenduchos de comerciantes y talleres de artesanos, calles y calles largas y más calles, cortas calles estrechas, calles largas de plateros, pellejeros, odreros, zapateros, calafates, batihojas, alcuceros, toneleros, pedreros, alfayates, herreros, alfajemes, tejedores, albarderos, caldereros, calles de alberguerías, calles con portales y portones, calles con tiendas, mesones y baños públicos, un pie aquí y otro allá, gentío trajinando en las plazas y placetas, vagabundos bostezando bajo los soportales, gente saliendo y entrando por las puertas de Dakar, Alcaicería, Bib Ragel, Ingenio, Triana, Arenal... un laberinto en donde Lorenzo de Brujas, con su cartapacio de pergamino bajo el brazo, había resuelto perderse esa tarde después de haberse solazado en los baños de la Reina Mora. Con su bonete de terciopelo carmesí y las guedejas del cabello rubio arremolinadas en la nuca, se dejaba llevar por los aromas y los olores intensos de las calles de Sevilla, el colorido de las sayas y los briales, las formas arrogantes de algunos cuerpos, las pupilas cruzadas en un fugaz parpadeo entre dos esquinas. La mañana le había ajado su mundo de recuerdos. La columna de humo elevándose a lo lejos había agudizado aún más las sensaciones experimentadas al contemplar los rostros y la miseria de los dos condenados aferrados a los barrotes de la carreta. No olvidaba las palabras de Ferrán Ambroa, el amanuense del Libro de los juegos, quien, al despedirse de él en la calle de la Alfóndiga, la más larga de Sevilla, aún había tenido un gesto de reproche agraz hacia los sodomitas: "A estas horas ya estarán en el infierno jodiendo con el diablo". Había almorzado fuera de casa con frugal apetito: unas rebanadas de pan, unos trozos resecos de tocino y tres o cuatro dátiles. Había pasado después por el scriptorium del alcázar para completar la figura de un amanuense que, bajo una arquería de medio punto, raspaba las letras de un pergamino. El resto de la miniatura, perfilada a lápiz de plomo sobre el pautado del folio, descubría los trazos de otros dos amanuenses inclinados sobre los pupitres, un dibujo aún en fase de ejecución. Sin embargo, necesitaba tomar apuntes del natural para el Libro de los dados; por eso, Esteban de Gaceo, que se había citado con Diag Mansel en la tafurería mayor, había quedado también con él para que hiciera esos apuntes y conociera de paso al experto ajedrecista llegado del reino de Aragón hacía tan solo unos días. Al abrir la puerta, se le echó encima un tufo repentino. Olores añejos, vino malo, densidad humana, voces, jolgorio incesante. No se explicaba ese afán de algunos por dejarse la piel jugando a los dados. Abrió bien los ojos tratando de reconocer a maestre Esteban, al que, por fin, tras internarse entre las mesas y el gentío, vio sentado frente a un tablero. De espaldas, anchas espaldas cubiertas con una saya roja, observó la figura de un hombre que, sin duda, había de ser la del ajedrecista.»</em>
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
             <strong>Fuente primaria — <em>Fuero de Sevilla</em> (extractos adaptados):</strong><br>
@@ -402,74 +402,100 @@ vida.
   // ── SESIÓN 5: Guerra, botín y ética del comercio ──
   {
     id: 5,
-    title: 'Guerra, botín y ética del comercio',
+    title: 'El rey, el herrero y el símbolo del poder',
     type: 'fuentes',
     tag: 'Sesión 5 · Novela Histórica + Fuente Primaria',
-    desc: 'Comercio de posguerra · Crónica de Alfonso X · Dilemas éticos medievales y actuales',
+    desc: 'Vasallaje medieval · Crónica de Alfonso X · Acero toledano y dilemas éticos',
     render: () => `
       <div class="panel">
         <div class="panel-header gold"><span class="panel-icon">⚔️</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
           <div class="source-text">
-            <strong>Fragmento de novela (Extracto 8):</strong><br>
-            <em>«Los comerciantes vendían espadas, anillos y telas aún manchadas de sangre. Unos decían que venían de botines de guerra. Otros, que eran herencia sin dueño.»</em>
+            <strong>Fragmento de novela — Javier Oñoro, <em>El herrero del rey sabio</em>, "Toledo, 1274":</strong><br>
+            <em>«—Dicen que sois mi mejor herrero.
+—Me honráis majestad. Solo soy un discípulo del maestro Jaime. A él debo todo mi arte.
+—Sin embargo, vuestras espadas son ahora más duras y tenaces.
+—Todo se debe a las horas de trabajo y al agua del Tajo; no hay otra igual en el mundo.
+—Sí, eso decís todos, aunque me cuesta creerlo. Os he hecho venir para un encargo.
+—Estoy a vuestras órdenes majestad.
+—Como veis he dispuesto dos figuras de paja revestidas con dos cotas de malla. ¿Querríais examinarlas?
+—Por supuesto majestad.
+—Obsérvalas con detenimiento y ved que podéis decirme de ellas, su calidad, donde han sido fabricadas, tomaros el tiempo que necesitéis.
+—No necesito más tiempo. Esta primera está forjada aquí en Toledo, su antigüedad es entre veinte y treinta años, no lleva la marca del forjador porque ha sido arrancada, pero la hechura y la calidad del acero es inconfundible. En cuanto a la otra su hechura es francesa, diría que de Tours, ya que la marca del forjador está parcialmente borrada, es un trabajo admirable aunque el acero no es de la misma calidad que el anterior.
+—Veo que no me habían engañado y conocéis bien vuestro oficio. […]
+—Si un arquero a treinta pasos disparara sobre estas dos cotas de malla ¿qué ocurriría?
+—Lo sabéis muy bien majestad. Solo una cota de malla fabricada en Toledo es capaz de resistir un flechazo a treinta pasos.
+—¿Y si en vez de un arco utilizaran una ballesta?
+—Ninguna cota de malla puede resistir un disparo de ballesta a treinta pasos. A cincuenta pasos y con suerte una cota de malla toledana podría al menos detener la saeta y solo ocasionaría a su portador una herida leve, no a una distancia menor.
+—Eso tenía entendido y es lo que me preocupa, pues no me da la seguridad que deseo.
+—Los sarracenos utilizan ballestas en la defensa de sus castillos y frente a los arcos no debéis temer por vuestra seguridad llevando esta cota de malla, es casi imposible que un enemigo se acerque a vos armado con un arco a una distancia inferior a treinta pasos.
+—Ahora no es por los sarracenos. Debo entrevistarme con el Santo Padre en unos meses. […] Los Estados Vaticanos están infectados de grupos armados de diversa procedencia; en especial me preocupan los mercenarios genoveses, asesinos que utilizan como arma la ballesta. Me sentiría más tranquilo si pudiera vestir una cota de malla más segura. Desearía una cota de malla digna de un emperador, que ningún dardo ni flecha, ya fuera lanzada por una ballesta o un arco, pudiera atravesar a treinta pasos. ¿Podéis forjarla?
+—Es una tarea imposible majestad. […]
+—No os deis por vencido tan pronto. Estudiad el encargo durante dos semanas. Si lo conseguís quiero que se mantenga en secreto. Nadie debe portar otra semejante y tampoco debe saberse de su existencia. Para no despertar suspicacias o rumores, os encargaré una armadura completa que deberé tener lista dentro de seis meses. La cota de malla será un componente más de la armadura.»</em>
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
-            <strong>Fuente primaria — <em>Crónica de Alfonso X</em>, capítulo sobre la toma de Niebla (1262), adaptado:</strong><br>
-            (Texto entregado en clase por el profesor)
+            <strong>Fuente primaria — <em>Crónica de Alfonso X</em>, capítulo sobre la toma de Niebla (1262), según la edición de Manuel González Jiménez, citada por Alejandro García Sanjuán:</strong><br>
+            <em>«El rey don Alfonso dio a aquel rey Abén Mafod tierra en que viviese para en toda su vida: el lugar del Algaña, cerca de Sevilla, con todos los derechos que allí había el rey, y el diezmo del aceite. Le dio la huerta de Sevilla que llaman la Huerta del Rey y cantidades ciertas de maravedís en la Judería de Sevilla. Con esto, Abén Mafod tuvo mantenimiento honrado en toda su vida.
+Y algunos lugares de los que el rey ganó dejó poblados de moros.
+Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus términos, Gibraleón, Huelva, Serpa, Moura, Alcatín, Castro Marín, Tavira, Faro y Loulé.»</em>
           </div>
         </div>
       </div>
- 
+
       <div class="panel">
         <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Preguntas — Responde individualmente</span></div>
         <div class="panel-body">
- 
+
           <div class="question-block">
-            <span class="question-label">Pregunta 1</span>
-            <p class="question-prompt">Según la novela, ¿qué objetos se venden en el mercado y qué explicaciones dan los vendedores?</p>
-            <textarea class="answer-field" id="s5_q1" rows="4" placeholder="Describe los objetos y analiza las justificaciones que dan los comerciantes..."></textarea>
+            <span class="question-label">Pregunta 1 — Análisis literario</span>
+            <p class="question-prompt">Según el fragmento de la novela, ¿qué cualidades definen al herrero y qué relación mantiene con el rey?</p>
+            <p class="question-guide">💡 Analiza el diálogo inicial. El rey reconoce su fama ("mi mejor herrero"), pero el herrero responde con humildad ("solo soy un discípulo…"). Identifica los valores que aparecen: humildad, maestría técnica, lealtad, respeto al vasallaje. ¿Qué tipo de vínculo se establece entre ambos?</p>
+            <textarea class="answer-field" id="s5_q1" rows="4" placeholder="Describe las cualidades del herrero y el tipo de relación que mantiene con el rey..."></textarea>
           </div>
- 
+
           <hr class="divider">
- 
+
           <div class="question-block">
-            <span class="question-label">Pregunta 2</span>
-            <p class="question-prompt">Según la crónica, ¿cómo se obtenía el botín y cómo se repartía?</p>
-            <textarea class="answer-field" id="s5_q2" rows="4" placeholder="Extrae la información de la fuente primaria sobre el botín de guerra..."></textarea>
+            <span class="question-label">Pregunta 2 — Análisis de fuente histórica</span>
+            <p class="question-prompt">Según la crónica, ¿cómo trató Alfonso X a los vencidos tras la conquista de Niebla?</p>
+            <p class="question-guide">💡 Extrae la información del texto. ¿Qué recibió Ibn Mahfūz (Abén Mafod)? ¿Qué pasó con los lugares conquistados? ¿Qué idea del poder y de la guerra transmite esta decisión del rey?</p>
+            <textarea class="answer-field" id="s5_q2" rows="4" placeholder="Extrae la información de la crónica sobre el trato a los vencidos..."></textarea>
           </div>
- 
+
           <hr class="divider">
- 
+
           <div class="question-block">
-            <span class="question-label">Pregunta 3</span>
-            <p class="question-prompt">¿Crees que en la Edad Media se planteaban dudas éticas sobre comerciar con objetos saqueados? ¿Por qué?</p>
+            <span class="question-label">Pregunta 3 — Interpretación simbólica</span>
+            <p class="question-prompt">¿Qué simboliza la cota de malla que el rey encarga al herrero en la novela?</p>
+            <p class="question-guide">💡 Justifica tu elección citando frases del diálogo, sobre todo donde el rey habla del secreto, del "emperador" y de su miedo a los ballesteros genoveses.</p>
             <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="radio" name="s5_etica" value="si"> <span class="option-text">Sí, había debate ético claro</span></label>
-              <label class="option-item"><input type="radio" name="s5_etica" value="parcial"> <span class="option-text">Solo desde la perspectiva religiosa</span></label>
-              <label class="option-item"><input type="radio" name="s5_etica" value="no"> <span class="option-text">No, era una práctica totalmente aceptada</span></label>
+              <label class="option-item"><input type="radio" name="s5_simbolo" value="proteccion"> <span class="option-text">Un simple objeto de protección militar</span></label>
+              <label class="option-item"><input type="radio" name="s5_simbolo" value="fragilidad"> <span class="option-text">Un símbolo de la fragilidad y las inseguridades del poder</span></label>
+              <label class="option-item"><input type="radio" name="s5_simbolo" value="superioridad"> <span class="option-text">Una muestra de la superioridad técnica de Toledo</span></label>
             </div>
-            <textarea class="answer-field" id="s5_q3" rows="3" placeholder="Argumenta tu respuesta con información histórica..."></textarea>
+            <textarea class="answer-field" id="s5_q3" rows="3" placeholder="Argumenta tu respuesta citando fragmentos del diálogo..."></textarea>
           </div>
- 
+
           <hr class="divider">
- 
+
           <div class="question-block">
-            <span class="question-label">Pregunta 4</span>
-            <p class="question-prompt">¿Conoces algún ejemplo actual de comercio con bienes procedentes de conflictos bélicos (diamantes de sangre, antigüedades expoliadas, etc.)?</p>
-            <textarea class="answer-field" id="s5_q4" rows="4" placeholder="Describe el ejemplo y compáralo con la situación medieval..."></textarea>
+            <span class="question-label">Pregunta 4 — Investigación autónoma</span>
+            <p class="question-prompt">Investiga brevemente: ¿Qué era el acero toledano y por qué era tan valorado en la Edad Media?</p>
+            <p class="question-guide">💡 Puedes buscar información sobre su fama en Europa, su proceso de fabricación (templado en el agua del Tajo), y su demanda en los reinos cristianos. Relaciónalo con el orgullo del herrero en el diálogo.</p>
+            <textarea class="answer-field" id="s5_q4" rows="4" placeholder="Describe qué era el acero toledano y por qué era tan apreciado..."></textarea>
           </div>
- 
+
           <hr class="divider">
- 
+
           <div class="question-block">
             <span class="question-label">Pregunta 5 — Dilema ético</span>
-            <p class="question-prompt">Imagina que eres un mercader medieval. ¿Aceptarías comprar y vender esos objetos? Argumenta tu decisión.</p>
+            <p class="question-prompt">Imagina que eres un herrero toledano en el siglo XIII y el rey te hace un encargo que sabes que es imposible o muy peligroso. ¿Aceptarías?</p>
+            <p class="question-guide">💡 Ten en cuenta: la relación de vasallaje, el honor del oficio, el miedo a las represalias, el prestigio de servir al rey, y las consecuencias para tu familia.</p>
             <div class="role-cards" style="margin-bottom:0.8rem;">
               <label class="role-card" onclick="selectRole(this)">
                 <input type="radio" name="s5_decision" value="si">
                 <span class="role-emoji">✅</span>
-                <span class="role-name">Sí compraría</span>
+                <span class="role-name">Sí, siempre</span>
               </label>
               <label class="role-card" onclick="selectRole(this)">
                 <input type="radio" name="s5_decision" value="depende">
@@ -479,15 +505,15 @@ vida.
               <label class="role-card" onclick="selectRole(this)">
                 <input type="radio" name="s5_decision" value="no">
                 <span class="role-emoji">❌</span>
-                <span class="role-name">No compraría</span>
+                <span class="role-name">No, me negaría</span>
               </label>
             </div>
-            <textarea class="answer-field" id="s5_q5" rows="4" placeholder="Justifica tu decisión usando valores medievales (ley, religión, honor) y razonamiento propio..."></textarea>
+            <textarea class="answer-field" id="s5_q5" rows="4" placeholder="Justifica tu decisión usando valores medievales (vasallaje, honor, religión) y razonamiento propio..."></textarea>
           </div>
- 
+
         </div>
       </div>
- 
+
       ${orgPanel(5)}
     `
   },
