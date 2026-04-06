@@ -53,7 +53,37 @@ const sessions = [
         <div class="panel-body">
           <p style="color:#3a2a12;font-size:0.97rem;margin-bottom:1rem;line-height:1.6;">Lee los dos textos que tu profesor te ha entregado o proyectado y responde las preguntas de forma individual.</p>
           <div class="source-text">
-            <strong>Fragmento de novela (Extracto 2):</strong> Escena de Toledo al amanecer — Alfonso X recuerda el trabajo con sus sabios (Ibn Raghel, Alquibicio, Yehuda Ibn Moshe, Isaac Ibn Sid) elaborando las Tablas Alfonsíes.
+            <strong>Fragmento de novela (Extracto 2):</strong> Escena de Toledo al amanecer — en el alcázar de Toledo los sabios cristianos, musulmanes y judíos
+también llevaban a cabo trabajos importantes, sobre todo la conclusión de la
+General Historia y la traducción y composición de algunas obras
+astrológicas.
+El mes de abril había amanecido con brumas sobre el río Tajo, pero, a
+medida que había ido avanzando la mañana, el sol se había extendido sobre
+las murallas y calles de la laberíntica ciudad levantada sobre una elevada
+colina. El Astrólogo contemplaba desde una ventana del alcázar este
+lumínico panorama, fijando en ese momento la vista en un grupo de
+cetreros que, en pos de un halcón, atravesaba el puente de Alcántara
+dirigiéndose hacia la otra orilla. No es que los distinguiera muy bien, pero
+sus voces proclamaban su condición.
+También al otro lado, con sus almenas moras recortadas sobre un rocoso
+promontorio, el castillo de San Servando le traía a la memoria los recuerdos
+de muchas noches en vela contemplando el cielo estrellado en compañía de
+sus sabios Ibn Raghel, Alquibicio, Yehuda Ibn Moshe e Isaac Ibn Sid, que
+durante años elaboraron con paciencia unas tablas astronómicas para fijar el
+movimiento de los cuerpos celestes sobre la eclíptica.
+Toledo siempre había sido un reducto de sabiduría. Aquí, ya desde los
+tiempos del rey Yahya Al-Mamun, brillaba la astrología como una rutilante
+estrella amarilla clavada en el firmamento. Poco más de un siglo después,
+con sus traductores y traducciones, el arzobispo don Raimundo encendió
+otro foco de luz en el que irradiaron Juan Hispano, Domingo Gundisalvo y
+Gerardo de Cremona, que hicieron resplandecer la astrología árabe y griega,
+la filosofía, las matemáticas y la medicina. Cobró el saber fama en Toledo y
+se juntaron en sus calles, palacios y cuevas los alquimistas, los lapidarios,
+los astrólogos, los filósofos, los físicos, los matemáticos, los historiadores,
+los juristas... Cuando Alfonso aún era infante se hizo traducir el Calila e
+Dimna, pues amaba los viejos cuentos, conocidos como exempla, porque
+con sus enseñanzas y lecciones de sabiduría servían de ejemplos para la
+vida.
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
             <strong>Fuente primaria:</strong> Prólogo de las <em>Tablas Alfonsíes</em> — el propio Alfonso X explica por qué reunió a sabios de diferentes religiones.
