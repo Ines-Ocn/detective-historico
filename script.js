@@ -249,7 +249,13 @@ vida.
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
             <strong>Fuente primaria — Prólogo de las <em>Cantigas de Santa María</em> (Alfonso X):</strong><br>
-            (Texto entregado en clase por el profesor)
+            <em>«Este es el prólogo de las Cantigas de Santa María, indicando las cosas que son precisas para bien trovar.
+
+Porque trovar es cosa en que yace entendimiento, por eso, quien lo hace ha de tenerlo, y razón bastante, para que entienda y sepa decir (o cantar) lo que entiende y le place expresar, porque el bien trovar así ha de ser hecho.
+
+Y aunque yo estas dos cualidades no tengo tal como tener quisiera, sin embargo, probaré de mostrar en adelante lo poco que sé, confiando en Dios, de donde el saber viene, pues por Él supongo que podré mostrar algo de lo que mostrar quiero.
+
+Y lo que quiero es decir loor de la Virgen, Madre de Nuestro Señor, Santa María, que es lo mejor que Él hizo, y, por esto, yo quiero ser desde hoy trovador suyo, y le ruego que me quiera por su trovador, y que quiera recibir mi trovar, porque por él quiero mostrar los milagros que Ella hizo; y además quiero dejarme de trovar, desde ahora, por otra dama, y pienso recobrar, por ésta, cuanto por las otras perdí. Por ello, le ruego, si ella quisiere, que le plazca lo que de ella yo dijere en mis cantares, y si a ella le agradara, que me dé un galardón tal como el que ella da a los que ama, y quien lo supiere, con mayor agrado trovará por ella.»</em>
           </div>
         </div>
       </div>
@@ -412,25 +418,25 @@ vida.
         <div class="panel-body">
           <div class="source-text">
             <strong>Fragmento de novela — Javier Oñoro, <em>El herrero del rey sabio</em>, "Toledo, 1274":</strong><br>
-            <em>«—Dicen que sois mi mejor herrero.
-—Me honráis majestad. Solo soy un discípulo del maestro Jaime. A él debo todo mi arte.
-—Sin embargo, vuestras espadas son ahora más duras y tenaces.
-—Todo se debe a las horas de trabajo y al agua del Tajo; no hay otra igual en el mundo.
-—Sí, eso decís todos, aunque me cuesta creerlo. Os he hecho venir para un encargo.
-—Estoy a vuestras órdenes majestad.
-—Como veis he dispuesto dos figuras de paja revestidas con dos cotas de malla. ¿Querríais examinarlas?
-—Por supuesto majestad.
-—Obsérvalas con detenimiento y ved que podéis decirme de ellas, su calidad, donde han sido fabricadas, tomaros el tiempo que necesitéis.
-—No necesito más tiempo. Esta primera está forjada aquí en Toledo, su antigüedad es entre veinte y treinta años, no lleva la marca del forjador porque ha sido arrancada, pero la hechura y la calidad del acero es inconfundible. En cuanto a la otra su hechura es francesa, diría que de Tours, ya que la marca del forjador está parcialmente borrada, es un trabajo admirable aunque el acero no es de la misma calidad que el anterior.
-—Veo que no me habían engañado y conocéis bien vuestro oficio. […]
-—Si un arquero a treinta pasos disparara sobre estas dos cotas de malla ¿qué ocurriría?
-—Lo sabéis muy bien majestad. Solo una cota de malla fabricada en Toledo es capaz de resistir un flechazo a treinta pasos.
-—¿Y si en vez de un arco utilizaran una ballesta?
-—Ninguna cota de malla puede resistir un disparo de ballesta a treinta pasos. A cincuenta pasos y con suerte una cota de malla toledana podría al menos detener la saeta y solo ocasionaría a su portador una herida leve, no a una distancia menor.
-—Eso tenía entendido y es lo que me preocupa, pues no me da la seguridad que deseo.
-—Los sarracenos utilizan ballestas en la defensa de sus castillos y frente a los arcos no debéis temer por vuestra seguridad llevando esta cota de malla, es casi imposible que un enemigo se acerque a vos armado con un arco a una distancia inferior a treinta pasos.
-—Ahora no es por los sarracenos. Debo entrevistarme con el Santo Padre en unos meses. […] Los Estados Vaticanos están infectados de grupos armados de diversa procedencia; en especial me preocupan los mercenarios genoveses, asesinos que utilizan como arma la ballesta. Me sentiría más tranquilo si pudiera vestir una cota de malla más segura. Desearía una cota de malla digna de un emperador, que ningún dardo ni flecha, ya fuera lanzada por una ballesta o un arco, pudiera atravesar a treinta pasos. ¿Podéis forjarla?
-—Es una tarea imposible majestad. […]
+            <em>«—Dicen que sois mi mejor herrero.<br>
+—Me honráis majestad. Solo soy un discípulo del maestro Jaime. A él debo todo mi arte.<br>
+—Sin embargo, vuestras espadas son ahora más duras y tenaces.<br>
+—Todo se debe a las horas de trabajo y al agua del Tajo; no hay otra igual en el mundo.<br>
+—Sí, eso decís todos, aunque me cuesta creerlo. Os he hecho venir para un encargo.<br>
+—Estoy a vuestras órdenes majestad.<br>
+—Como veis he dispuesto dos figuras de paja revestidas con dos cotas de malla. ¿Querríais examinarlas?<br>
+—Por supuesto majestad.<br>
+—Obsérvalas con detenimiento y ved que podéis decirme de ellas, su calidad, donde han sido fabricadas, tomaros el tiempo que necesitéis.<br>
+—No necesito más tiempo. Esta primera está forjada aquí en Toledo, su antigüedad es entre veinte y treinta años, no lleva la marca del forjador porque ha sido arrancada, pero la hechura y la calidad del acero es inconfundible. En cuanto a la otra su hechura es francesa, diría que de Tours, ya que la marca del forjador está parcialmente borrada, es un trabajo admirable aunque el acero no es de la misma calidad que el anterior.<br>
+—Veo que no me habían engañado y conocéis bien vuestro oficio. […]<br>
+—Si un arquero a treinta pasos disparara sobre estas dos cotas de malla ¿qué ocurriría?<br>
+—Lo sabéis muy bien majestad. Solo una cota de malla fabricada en Toledo es capaz de resistir un flechazo a treinta pasos.<br>
+—¿Y si en vez de un arco utilizaran una ballesta?<br>
+—Ninguna cota de malla puede resistir un disparo de ballesta a treinta pasos. A cincuenta pasos y con suerte una cota de malla toledana podría al menos detener la saeta y solo ocasionaría a su portador una herida leve, no a una distancia menor.<br>
+—Eso tenía entendido y es lo que me preocupa, pues no me da la seguridad que deseo.<br>
+—Los sarracenos utilizan ballestas en la defensa de sus castillos y frente a los arcos no debéis temer por vuestra seguridad llevando esta cota de malla, es casi imposible que un enemigo se acerque a vos armado con un arco a una distancia inferior a treinta pasos.<br>
+—Ahora no es por los sarracenos. Debo entrevistarme con el Santo Padre en unos meses. […] Los Estados Vaticanos están infectados de grupos armados de diversa procedencia; en especial me preocupan los mercenarios genoveses, asesinos que utilizan como arma la ballesta. Me sentiría más tranquilo si pudiera vestir una cota de malla más segura. Desearía una cota de malla digna de un emperador, que ningún dardo ni flecha, ya fuera lanzada por una ballesta o un arco, pudiera atravesar a treinta pasos. ¿Podéis forjarla?<br>
+—Es una tarea imposible majestad. […]<br>
 —No os deis por vencido tan pronto. Estudiad el encargo durante dos semanas. Si lo conseguís quiero que se mantenga en secreto. Nadie debe portar otra semejante y tampoco debe saberse de su existencia. Para no despertar suspicacias o rumores, os encargaré una armadura completa que deberé tener lista dentro de seis meses. La cota de malla será un componente más de la armadura.»</em>
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
