@@ -472,7 +472,6 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
           <div class="question-block">
             <span class="question-label">Pregunta 1 — Análisis literario</span>
             <p class="question-prompt">Según el fragmento de la novela, ¿qué cualidades definen al herrero y qué relación mantiene con el rey?</p>
-            <p class="question-guide">💡 Analiza el diálogo inicial. El rey reconoce su fama ("mi mejor herrero"), pero el herrero responde con humildad ("solo soy un discípulo…"). Identifica los valores que aparecen: humildad, maestría técnica, lealtad, respeto al vasallaje. ¿Qué tipo de vínculo se establece entre ambos?</p>
             <textarea class="answer-field" id="s5_q1" rows="4" placeholder="Describe las cualidades del herrero y el tipo de relación que mantiene con el rey..."></textarea>
           </div>
 
@@ -481,7 +480,6 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
           <div class="question-block">
             <span class="question-label">Pregunta 2 — Análisis de fuente histórica</span>
             <p class="question-prompt">Según la crónica, ¿cómo trató Alfonso X a los vencidos tras la conquista de Niebla?</p>
-            <p class="question-guide">💡 Extrae la información del texto. ¿Qué recibió Ibn Mahfūz (Abén Mafod)? ¿Qué pasó con los lugares conquistados? ¿Qué idea del poder y de la guerra transmite esta decisión del rey?</p>
             <textarea class="answer-field" id="s5_q2" rows="4" placeholder="Extrae la información de la crónica sobre el trato a los vencidos..."></textarea>
           </div>
 
@@ -490,7 +488,6 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
           <div class="question-block">
             <span class="question-label">Pregunta 3 — Interpretación simbólica</span>
             <p class="question-prompt">¿Qué simboliza la cota de malla que el rey encarga al herrero en la novela?</p>
-            <p class="question-guide">💡 Justifica tu elección citando frases del diálogo, sobre todo donde el rey habla del secreto, del "emperador" y de su miedo a los ballesteros genoveses.</p>
             <div class="options-group" style="margin-bottom:0.8rem;">
               <label class="option-item"><input type="radio" name="s5_simbolo" value="proteccion"> <span class="option-text">Un simple objeto de protección militar</span></label>
               <label class="option-item"><input type="radio" name="s5_simbolo" value="fragilidad"> <span class="option-text">Un símbolo de la fragilidad y las inseguridades del poder</span></label>
@@ -504,7 +501,6 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
           <div class="question-block">
             <span class="question-label">Pregunta 4 — Investigación autónoma</span>
             <p class="question-prompt">Investiga brevemente: ¿Qué era el acero toledano y por qué era tan valorado en la Edad Media?</p>
-            <p class="question-guide">💡 Puedes buscar información sobre su fama en Europa, su proceso de fabricación (templado en el agua del Tajo), y su demanda en los reinos cristianos. Relaciónalo con el orgullo del herrero en el diálogo.</p>
             <textarea class="answer-field" id="s5_q4" rows="4" placeholder="Describe qué era el acero toledano y por qué era tan apreciado..."></textarea>
           </div>
 
@@ -513,7 +509,6 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
           <div class="question-block">
             <span class="question-label">Pregunta 5 — Dilema ético</span>
             <p class="question-prompt">Imagina que eres un herrero toledano en el siglo XIII y el rey te hace un encargo que sabes que es imposible o muy peligroso. ¿Aceptarías?</p>
-            <p class="question-guide">💡 Ten en cuenta: la relación de vasallaje, el honor del oficio, el miedo a las represalias, el prestigio de servir al rey, y las consecuencias para tu familia.</p>
             <div class="role-cards" style="margin-bottom:0.8rem;">
               <label class="role-card" onclick="selectRole(this)">
                 <input type="radio" name="s5_decision" value="si">
