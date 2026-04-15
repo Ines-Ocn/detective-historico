@@ -154,7 +154,7 @@ vida.
     id: 2,
     title: 'El saber juzga a los reyes',
     type: 'fuentes',
-    tag: 'Sesión 2 · Fuentes Primarias',
+    tag: 'Sesión 2 · ovela Histórica + Fuente Primaria',
     desc: 'Siete Partidas · Conocimiento, poder y justicia en el pensamiento alfonsí',
     render: () => `
       <div class="panel">
