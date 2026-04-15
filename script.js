@@ -533,91 +533,100 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
       ${orgPanel(5)}
     `
   },
- 
-  // ── SESIÓN 6: Discusión grabada — Grupo focal ──
-  {
-    id: 6,
-    title: 'Discusión final — Feedback cualitativo',
-    type: 'fuentes',
-    tag: 'Sesión 6 · Grupo Focal · Reflexión Metacognitiva',
-    desc: 'Debate guiado · Reflexión sobre el método · Percepción de la novela histórica vs. fuentes',
-    render: () => `
-       <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">✍️</span><span class="panel-title">Tu opinión personal</span></div>
-        <div class="panel-body">
-          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">En esta sesión, se recoge por escrito tu opinión personal sobre lo que se ha estudiado. Responde a las preguntas que encontrarás a continuación. No es una evaluación, sino un espacio para expresar libremente tus percepciones.</p>
-        </div>
-      </div>
- 
-      <div class="panel">
-        <div class="panel-header gold"><span class="panel-icon">💬</span><span class="panel-title">Preguntas guía del debate (discutidas en grupo)</span></div>
-        <div class="panel-body">
-          <ol style="color:#3a2a12;font-size:0.95rem;line-height:1.8;padding-left:1.2rem;">
-            <li><strong>Apertura:</strong> ¿Qué es lo que más os ha sorprendido o llamado la atención de Alfonso X y su época a través de los fragmentos trabajados?</li>
-            <li><strong>Comparación metodológica:</strong> ¿Cómo compararíais aprender historia con estos fragmentos frente a cómo lo hacéis habitualmente con el libro de texto?</li>
-            <li><strong>Comprensión histórica:</strong> ¿Creéis que los fragmentos de novela os han ayudado a entender mejor el contexto histórico? ¿Por qué?</li>
-            <li><strong>Fuentes primarias:</strong> ¿Qué os ha parecido leer documentos reales del siglo XIII? ¿Os resultaron útiles, difíciles, interesantes?</li>
-            <li><strong>Empatía histórica:</strong> ¿Os habéis sentido más cerca de los personajes históricos al leer la novela?</li>
-            <li><strong>Pensamiento crítico:</strong> ¿Cómo habéis distinguido lo que es ficción de lo que es real?</li>
-            <li><strong>Motivación:</strong> ¿Esta forma de trabajar ha cambiado vuestro interés por la historia?</li>
-            <li><strong>Cierre:</strong> Si tuvierais que recomendar o no este método, ¿qué diríais?</li>
-          </ol>
-        </div>
-      </div>
- 
-      <div class="panel">
-        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Reflexión escrita individual</span></div>
-        <div class="panel-body">
-          <p style="color:#3a2a12;font-size:0.95rem;margin-bottom:1rem;line-height:1.6;">Responde individualmente estas preguntas escritas.</p>
 
-                    <div class="question-block">
-            <span class="question-label">Reflexión 1</span>
-            <p class="question-prompt">¿Qué es lo que más te ha impactado de todo lo trabajado en las sesiones anteriores? ¿Por qué?</p>
-            <textarea class="answer-field" id="s6_q1" rows="4" placeholder="Escribe aquí lo que más te haya impactado..."></textarea>
-          </div>
- 
-          <hr class="divider">
- 
-          <div class="question-block">
-            <span class="question-label">Reflexión 2</span>
-            <p class="question-prompt">Después de estas sesiones, ¿cambiarías algo de tu opinión inicial sobre el uso de la novela histórica en clase de Historia?</p>
-            <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="radio" name="s6_cambio" value="si"> <span class="option-text">Sí, he cambiado mi opinión</span></label>
-              <label class="option-item"><input type="radio" name="s6_cambio" value="parcial"> <span class="option-text">He matizado algunos aspectos</span></label>
-              <label class="option-item"><input type="radio" name="s6_cambio" value="no"> <span class="option-text">No, mi opinión se mantiene igual</span></label>
-            </div>
-            <textarea class="answer-field" id="s6_q2" rows="3" placeholder="Explica si ha cambiado tu visión y por qué..."></textarea>
-          </div>
- 
-          <hr class="divider">
- 
-          <div class="question-block">
-            <span class="question-label">Reflexión 3 — Valoración global</span>
-            <p class="question-prompt">En general, ¿cómo valoras esta secuencia de 6 sesiones combinando novela histórica y fuentes primarias?</p>
-            <div class="options-group" style="margin-bottom:0.8rem;">
-              <label class="option-item"><input type="radio" name="s6_valoracion" value="muy_positiva"> <span class="option-text">Muy positiva — lo recomendaría</span></label>
-              <label class="option-item"><input type="radio" name="s6_valoracion" value="positiva"> <span class="option-text">Positiva — aunque con algunos matices</span></label>
-              <label class="option-item"><input type="radio" name="s6_valoracion" value="neutra"> <span class="option-text">Neutra — ni mejor ni peor que el método habitual</span></label>
-              <label class="option-item"><input type="radio" name="s6_valoracion" value="negativa"> <span class="option-text">Negativa — prefiero el método tradicional</span></label>
-            </div>
-            <textarea class="answer-field" id="s6_q3" rows="4" placeholder="Argumenta tu valoración global con ejemplos concretos de las sesiones..."></textarea>
-          </div>
- 
-          <hr class="divider">
- 
-          <div class="question-block">
-            <span class="question-label">Reflexión 4 — Metacognición</span>
-            <p class="question-prompt">Después de las sesiones anteriores trabajando con novela histórica y fuentes primarias: ¿en qué se diferencia tu forma de leer una novela histórica de tu forma de analizar una fuente primaria?</p>
-            <textarea class="answer-field" id="s6_q4" rows="5" placeholder="Esta reflexión es de las más importantes de toda la secuencia. Tómate el tiempo necesario..."></textarea>
-          </div> 
-        </div>
+  // ── SESIÓN 6: Reflexión individual final — Grupo control ──
+{
+  id: 6,
+  title: 'Reflexión final — Experiencia de aprendizaje',
+  type: 'fuentes',
+  tag: 'Sesión 6 · Reflexión individual · Evaluación cualitativa',
+  desc: 'Reflexión individual sobre la experiencia de aprendizaje con fuentes históricas y enseñanza expositiva',
+  render: () => `
+    
+    <div class="panel">
+      <div class="panel-header blue">
+        <span class="panel-icon">✍️</span>
+        <span class="panel-title">Tu opinión personal</span>
       </div>
- 
-      ${orgPanel(6)}
-    `
-  }
-];
+      <div class="panel-body">
+        <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">
+          En esta última sesión vas a realizar una reflexión individual sobre la experiencia de aprendizaje desarrollada durante estas clases. No se trata de una evaluación, sino de un espacio para expresar tu percepción personal.
+        </p>
+      </div>
+    </div>
 
+    <div class="panel">
+      <div class="panel-header gold">
+        <span class="panel-icon">🧠</span>
+        <span class="panel-title">Preguntas de reflexión</span>
+      </div>
+
+      <div class="panel-body">
+
+        <div class="question-block">
+          <span class="question-label">Reflexión 1</span>
+          <p class="question-prompt">
+            ¿Cómo describirías la forma en que has trabajado la historia en estas sesiones?
+          </p>
+          <textarea class="answer-field" id="s6_q1" rows="4" placeholder="Escribe tu respuesta..."></textarea>
+        </div>
+
+        <hr class="divider">
+
+        <div class="question-block">
+          <span class="question-label">Reflexión 2</span>
+          <p class="question-prompt">
+            ¿Qué dificultades has encontrado al trabajar con las actividades?
+          </p>
+          <textarea class="answer-field" id="s6_q2" rows="4" placeholder="Describe las dificultades que hayas tenido..."></textarea>
+        </div>
+
+        <hr class="divider">
+
+        <div class="question-block">
+          <span class="question-label">Reflexión 3</span>
+          <p class="question-prompt">
+            ¿Crees que esta forma de trabajar te ha ayudado a comprender mejor el pasado? ¿Por qué?
+          </p>
+          <textarea class="answer-field" id="s6_q3" rows="5" placeholder="Argumenta tu respuesta..."></textarea>
+        </div>
+
+        <hr class="divider">
+
+        <div class="question-block">
+          <span class="question-label">Reflexión 4</span>
+          <p class="question-prompt">
+            ¿Qué tipo de actividades te han resultado más útiles para aprender historia?
+          </p>
+          <textarea class="answer-field" id="s6_q4" rows="4" placeholder="Explica qué actividades te han ayudado más..."></textarea>
+        </div>
+
+        <hr class="divider">
+
+        <div class="question-block">
+          <span class="question-label">Reflexión 5</span>
+          <p class="question-prompt">
+            ¿Echas en falta algún tipo de material o enfoque?
+          </p>
+          <textarea class="answer-field" id="s6_q5" rows="4" placeholder="Indica si falta algo en las sesiones..."></textarea>
+        </div>
+
+        <hr class="divider">
+
+        <div class="question-block">
+          <span class="question-label">Reflexión 6</span>
+          <p class="question-prompt">
+            ¿Cómo mejorarías estas clases?
+          </p>
+          <textarea class="answer-field" id="s6_q6" rows="4" placeholder="Propón mejoras..."></textarea>
+        </div>
+
+      </div>
+    </div>
+
+    ${orgPanel(6)}
+  `
+}
 // ══════════════════════════════════════════
 //  AUTH
 // ══════════════════════════════════════════
