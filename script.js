@@ -88,6 +88,7 @@ vida.
           <div class="source-text" style="border-left-color:#5577cc;">
             <strong>Fuente primaria:</strong> Prólogo del <em>Libro de las Tablas</em> — "Porque la ciençia de la astrologia es cosa que no se puede averiguar sino por rectificamientos e los rectificamientos que tienen los sabios que cumplen en esta cosa no los puede complir un hombre porque no se puede complir en vida de un hombre. mas quando se cumple cumplese por obra de muchos hombres obrando uno em pos de otro en luengos tiempos (...) En esta sason paresçio el reynado fortunado et ayudado de Dios el reyno del muy alto y muy noble señor Rey don Alonso que Dios mantenga. E porque amava los saberes e los preçiava. mandoles haser los ynstrumentos que dixo Ptholomeo en su libro del Almagesto (...) E mandonos retificar en la çibdad de Toledo ques una de las çibdades prinçipales de España. guardela Dios (...) E posimos nombre a este libro el libro de las tablas alfonsies porque fue fecho y copilado por su mandado
           </div>
+          <p class="source-attr">Prólogo de las Tablas alfonsíes · ca. 1272</p>
         </div>
       </div>
  
@@ -175,6 +176,7 @@ vida.
             <strong>Fuente primaria — Siete Partidas, Partida II, título I, ley V (fragmento):</strong><br>
             «Et los santos dixeron que el rey es señor puesto en la tierra en lugar de Dios para complir la justicia et dar a cada uno su derecho, et por ende lo llamaron corazón et alma del pueblo; ca así como el alma yace en el corazón del home, et por ella vive el cuerpo et se mantiene, así en el rey yace la justicia, que es vida et mantenimiento del pueblo de su señorío. Et bien otrosí como el corazón es uno, et por é! reciben todos los otros miembros unidat para seer cuerpo, bien así todos los del regno, maguer sean muchos, porque el rey es et debe seer uno, por eso deben otrosí todos seer unos con él para servirle et ayudarle en las cosas que él ha de facer. Et naturalmente dixieron los sabios que el rey es cabeza del regno; ca así como de la cabeza nacen los sentidos, por que se mandan todos los miembros del cuerpo, bien así por el mandamiento que nace del rey, que es señor et cabeza de todos los del regno, se deben mandar, et guiar et haber un acuerdo con él para obedescerle, et amparar, et guardar et endereszar el regno onde él es alma et cabeza, et ellos los miembros.»
           </div>
+          <p class="source-attr">Siete Partidas · ca. 1265</p>
         </div>
       </div>
  
@@ -257,6 +259,7 @@ Y aunque yo estas dos cualidades no tengo tal como tener quisiera, sin embargo, 
 
 Y lo que quiero es decir loor de la Virgen, Madre de Nuestro Señor, Santa María, que es lo mejor que Él hizo, y, por esto, yo quiero ser desde hoy trovador suyo, y le ruego que me quiera por su trovador, y que quiera recibir mi trovar, porque por él quiero mostrar los milagros que Ella hizo; y además quiero dejarme de trovar, desde ahora, por otra dama, y pienso recobrar, por ésta, cuanto por las otras perdí. Por ello, le ruego, si ella quisiere, que le plazca lo que de ella yo dijere en mis cantares, y si a ella le agradara, que me dé un galardón tal como el que ella da a los que ama, y quien lo supiere, con mayor agrado trovará por ella.»
           </div>
+          <p class="source-attr">Prólogo de las Cantigas de Santa María · ca. 1270-1280</p>
         </div>
       </div>
  
@@ -462,6 +465,7 @@ Y algunos lugares de los que el rey ganó dejó poblados de moros.
 Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus términos, Gibraleón, Huelva, Serpa, Moura, Alcatín, Castro Marín, Tavira, Faro y Loulé.»
 <p class="source-ref">Crónica de Alfonso X, toma de Niebla (1262). Ed. Manuel González Jiménez, citada por Alejandro García Sanjuán.</p>
           </div>
+           <p class="source-attr">Crónica de Alfonso X · toma de Niebla (1262) · Ed. Manuel González Jiménez, citada por Alejandro García Sanjuán</p>
         </div>
       </div>
 
