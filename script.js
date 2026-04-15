@@ -627,6 +627,7 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
     ${orgPanel(6)}
   `
 }
+]; 
 // ══════════════════════════════════════════
 //  AUTH
 // ══════════════════════════════════════════
