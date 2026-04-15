@@ -155,16 +155,10 @@ vida.
     id: 2,
     title: 'El saber juzga a los reyes',
     type: 'fuentes',
-    tag: 'Sesión 2 · ovela Histórica + Fuente Primaria',
+    tag: 'Sesión 2 · Novela Histórica + Fuente Primaria',
     desc: 'Siete Partidas · Conocimiento, poder y justicia en el pensamiento alfonsí',
     render: () => `
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">⚠️</span><span class="panel-title">Hoy trabajamos con fuentes primarias reales</span></div>
-        <div class="panel-body">
-          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">Estos son <strong>documentos reales</strong> del siglo XIII. Los analizamos como historiadores: con método crítico y atención al contexto.</p>
-        </div>
-      </div>
- 
+      
       <div class="panel">
         <div class="panel-header gold"><span class="panel-icon">📜</span><span class="panel-title">Textos de la sesión</span></div>
         <div class="panel-body">
@@ -548,10 +542,10 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
     tag: 'Sesión 6 · Grupo Focal · Reflexión Metacognitiva',
     desc: 'Debate guiado · Reflexión sobre el método · Percepción de la novela histórica vs. fuentes',
     render: () => `
-      <div class="panel">
-        <div class="panel-header blue"><span class="panel-icon">🎙️</span><span class="panel-title">Esta sesión es diferente</span></div>
+       <div class="panel">
+        <div class="panel-header blue"><span class="panel-icon">✍️</span><span class="panel-title">Tu opinión personal</span></div>
         <div class="panel-body">
-          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">Durante las cinco sesiones anteriores habéis trabajado individualmente con fragmentos de novela histórica y documentos reales del siglo XIII. Hoy compartimos en grupo vuestras impresiones. La conversación se grabará (con vuestro consentimiento) para la investigación. <strong>No es una evaluación</strong>, sino un espacio para expresar libremente vuestras percepciones.</p>
+          <p style="color:#1a2a4a;font-size:1rem;line-height:1.6;">En esta sesión, se recoge por escrito tu opinión personal sobre lo que se ha estudiado. Responde a las preguntas que encontrarás a continuación. No es una evaluación, sino un espacio para expresar libremente tus percepciones.</p>
         </div>
       </div>
  
