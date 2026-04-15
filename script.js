@@ -334,8 +334,25 @@ Y lo que quiero es decir loor de la Virgen, Madre de Nuestro Señor, Santa Marí
             «Un laberinto de calles estrechas, largas y estrechísimas calles, callejas en curva, callejones que podían cruzarse tocando las paredes opuestas con ambas manos, pasadizos bordeados de ajimeces, costanillas con tenduchos de comerciantes y talleres de artesanos, calles y calles largas y más calles, cortas calles estrechas, calles largas de plateros, pellejeros, odreros, zapateros, calafates, batihojas, alcuceros, toneleros, pedreros, alfayates, herreros, alfajemes, tejedores, albarderos, caldereros, calles de alberguerías, calles con portales y portones, calles con tiendas, mesones y baños públicos, un pie aquí y otro allá, gentío trajinando en las plazas y placetas, vagabundos bostezando bajo los soportales, gente saliendo y entrando por las puertas de Dakar, Alcaicería, Bib Ragel, Ingenio, Triana, Arenal... un laberinto en donde Lorenzo de Brujas, con su cartapacio de pergamino bajo el brazo, había resuelto perderse esa tarde después de haberse solazado en los baños de la Reina Mora. Con su bonete de terciopelo carmesí y las guedejas del cabello rubio arremolinadas en la nuca, se dejaba llevar por los aromas y los olores intensos de las calles de Sevilla, el colorido de las sayas y los briales, las formas arrogantes de algunos cuerpos, las pupilas cruzadas en un fugaz parpadeo entre dos esquinas. La mañana le había ajado su mundo de recuerdos. La columna de humo elevándose a lo lejos había agudizado aún más las sensaciones experimentadas al contemplar los rostros y la miseria de los dos condenados aferrados a los barrotes de la carreta. No olvidaba las palabras de Ferrán Ambroa, el amanuense del Libro de los juegos, quien, al despedirse de él en la calle de la Alfóndiga, la más larga de Sevilla, aún había tenido un gesto de reproche agraz hacia los sodomitas: "A estas horas ya estarán en el infierno jodiendo con el diablo". Había almorzado fuera de casa con frugal apetito: unas rebanadas de pan, unos trozos resecos de tocino y tres o cuatro dátiles. Había pasado después por el scriptorium del alcázar para completar la figura de un amanuense que, bajo una arquería de medio punto, raspaba las letras de un pergamino. El resto de la miniatura, perfilada a lápiz de plomo sobre el pautado del folio, descubría los trazos de otros dos amanuenses inclinados sobre los pupitres, un dibujo aún en fase de ejecución. Sin embargo, necesitaba tomar apuntes del natural para el Libro de los dados; por eso, Esteban de Gaceo, que se había citado con Diag Mansel en la tafurería mayor, había quedado también con él para que hiciera esos apuntes y conociera de paso al experto ajedrecista llegado del reino de Aragón hacía tan solo unos días. Al abrir la puerta, se le echó encima un tufo repentino. Olores añejos, vino malo, densidad humana, voces, jolgorio incesante. No se explicaba ese afán de algunos por dejarse la piel jugando a los dados. Abrió bien los ojos tratando de reconocer a maestre Esteban, al que, por fin, tras internarse entre las mesas y el gentío, vio sentado frente a un tablero. De espaldas, anchas espaldas cubiertas con una saya roja, observó la figura de un hombre que, sin duda, había de ser la del ajedrecista.»
           </div>
           <div class="source-text" style="border-left-color:#5577cc;">
-            <strong>Fuente primaria — <em>Fuero de Sevilla</em> (extractos adaptados):</strong><br>
-            (Texto entregado en clase por el profesor)
+            <strong>Fuente primaria — <em>«Usos e costumbres del mercado de Sevilla»</em> (c. 1275):</strong><br>
+            <em>Manuscrito del siglo XIII (ed. González Arce, 1989)</em><br><br>
+            <strong>[XXII] – Del mercado general de Sevilla</strong><br>
+            En la ciudad de Sevilla hacen cada semana un día mercado general, y es el jueves. Pusieron y acostumbraron que en aquel día fuesen los <strong>ferreros, los zapateros, los correeros, los tenderos, las pescaderas, los regateros y todos los revendedores</strong>. Además, cerraban las tiendas en la villa, y todos los que algo vendían por las plazas iban a él, salvo pan y vino.<br>
+            El peso y las medidas no las tienen en el mercado este día, porque siempre están en la <strong>alhóndiga del rey</strong>, y allí van a pesar y a medir todos.<br><br>
+            <strong>[XXIII] – De los vecinos de Sevilla</strong><br>
+            Todos los mercaderes que son <strong>vecinos de Sevilla</strong>, cuantas mercancías trajeren de fuera del reino, no darán derecho ni portazgo al almojarifazgo ni a otro ninguno; lo tienen por franqueza con privilegio. Asimismo, ningún vecino de la ciudad no dará derecho ninguno de cuanto hubiere de su cosecha en la villa.<br><br>
+            <strong>[XXV] – Oficio de los pregoneros</strong><br>
+            Los <strong>pregoneros</strong> de la ciudad son puestos por el alcalde mayor, y han de pregonar cuanto que el concejo o el cabildo hubiere menester. Y si pregonaren vino, tomarán un azumbre.<br><br>
+            <strong>[XXVI] – Oficio de los corredores</strong><br>
+            Los <strong>corredores</strong> son jurados que hagan bien y lealmente su oficio, y son puestos por el alcalde mayor. De cuanto mercaren o vendieren, tomarán tres dineros del maravedí.<br><br>
+            <strong>Vocabulario:</strong><br>
+            • <strong>Alhóndiga</strong> : almacén público.<br>
+            • <strong>Almojarifazgo</strong> : impuesto de aduanas.<br>
+            • <strong>Portazgo</strong> : derecho de paso.<br>
+            • <strong>Pregonero</strong> : crique público.<br>
+            • <strong>Corredor</strong> : intermediario entre comprador y vendedor.<br>
+            • <strong>Azumbre</strong> : medida de líquido (≈2 litros).<br>
+            • <strong>Alcalde mayor</strong> : juez y gobernador nombrado por el rey.
           </div>
         </div>
       </div>
@@ -404,7 +421,6 @@ Y lo que quiero es decir loor de la Virgen, Madre de Nuestro Señor, Santa Marí
       ${orgPanel(4)}
     `
   },
- 
   // ── SESIÓN 5: Guerra, botín y ética del comercio ──
   {
     id: 5,
