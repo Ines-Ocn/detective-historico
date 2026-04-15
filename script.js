@@ -566,21 +566,21 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
       </div>
  
       <div class="panel">
-        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Reflexión escrita individual (después del debate)</span></div>
+        <div class="panel-header red"><span class="panel-icon">📝</span><span class="panel-title">Reflexión escrita individual</span></div>
         <div class="panel-body">
-          <p style="color:#3a2a12;font-size:0.95rem;margin-bottom:1rem;line-height:1.6;">Una vez terminada la discusión en grupo, responde individualmente estas preguntas escritas.</p>
- 
-          <div class="question-block">
+          <p style="color:#3a2a12;font-size:0.95rem;margin-bottom:1rem;line-height:1.6;">Responde individualmente estas preguntas escritas.</p>
+
+                    <div class="question-block">
             <span class="question-label">Reflexión 1</span>
-            <p class="question-prompt">¿Qué idea o comentario de la discusión te ha parecido más interesante o te ha hecho cambiar de opinión?</p>
-            <textarea class="answer-field" id="s6_q1" rows="4" placeholder="Recoge la idea que más te haya impactado del debate grupal..."></textarea>
+            <p class="question-prompt">¿Qué es lo que más te ha impactado de todo lo trabajado en las sesiones anteriores? ¿Por qué?</p>
+            <textarea class="answer-field" id="s6_q1" rows="4" placeholder="Escribe aquí lo que más te haya impactado..."></textarea>
           </div>
  
           <hr class="divider">
  
           <div class="question-block">
             <span class="question-label">Reflexión 2</span>
-            <p class="question-prompt">Después de la discusión, ¿cambiarías algo de tu opinión inicial sobre el uso de la novela histórica en clase de Historia?</p>
+            <p class="question-prompt">Después de estas sesiones, ¿cambiarías algo de tu opinión inicial sobre el uso de la novela histórica en clase de Historia?</p>
             <div class="options-group" style="margin-bottom:0.8rem;">
               <label class="option-item"><input type="radio" name="s6_cambio" value="si"> <span class="option-text">Sí, he cambiado mi opinión</span></label>
               <label class="option-item"><input type="radio" name="s6_cambio" value="parcial"> <span class="option-text">He matizado algunos aspectos</span></label>
@@ -607,10 +607,9 @@ Después que hubo ganado Niebla, cobró todo el Algarbe: Niebla con sus término
  
           <div class="question-block">
             <span class="question-label">Reflexión 4 — Metacognición</span>
-            <p class="question-prompt">Después de 5 sesiones trabajando entre novela histórica y fuentes primarias: ¿en qué se diferencia tu forma de leer una novela histórica de tu forma de analizar una fuente primaria?</p>
+            <p class="question-prompt">Después de las sesiones anteriores trabajando con novela histórica y fuentes primarias: ¿en qué se diferencia tu forma de leer una novela histórica de tu forma de analizar una fuente primaria?</p>
             <textarea class="answer-field" id="s6_q4" rows="5" placeholder="Esta reflexión es de las más importantes de toda la secuencia. Tómate el tiempo necesario..."></textarea>
-          </div>
- 
+          </div> 
         </div>
       </div>
  
