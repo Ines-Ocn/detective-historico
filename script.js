@@ -51,7 +51,7 @@ const sessions = [
       <div class="panel">
         <div class="panel-header gold"><span class="panel-icon">📖</span><span class="panel-title">Lee antes de responder</span></div>
         <div class="panel-body">
-          <p style="color:#3a2a12;font-size:0.97rem;margin-bottom:1rem;line-height:1.6;">Lee los dos textos que tu profesor te ha entregado o proyectado y responde las preguntas de forma individual.</p>
+          <p style="color:#3a2a12;font-size:0.97rem;margin-bottom:1rem;line-height:1.6;">Lee los dos textos y responde las preguntas de forma individual.</p>
           <div class="source-text">
             <strong>Fragmento de novela:</strong> "En el alcázar de Toledo los sabios cristianos, musulmanes y judíos
 también llevaban a cabo trabajos importantes, sobre todo la conclusión de la
