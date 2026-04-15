@@ -154,7 +154,7 @@ vida.
   {
     id: 2,
     title: 'El saber juzga a los reyes',
-    type: 'fuentes',
+    type: 'novela',
     tag: 'Sesión 2 · Novela Histórica + Fuente Primaria',
     desc: 'Siete Partidas · Conocimiento, poder y justicia en el pensamiento alfonsí',
     render: () => `
@@ -422,7 +422,7 @@ Y lo que quiero es decir loor de la Virgen, Madre de Nuestro Señor, Santa Marí
   {
     id: 5,
     title: 'El rey, el herrero y el símbolo del poder',
-    type: 'fuentes',
+    type: 'novela',
     tag: 'Sesión 5 · Novela Histórica + Fuente Primaria',
     desc: 'Vasallaje medieval · Crónica de Alfonso X · Acero toledano y dilemas éticos',
     render: () => `
