@@ -386,7 +386,7 @@ Y lo que quiero es decir loor de la Virgen, Madre de Nuestro Señor, Santa Marí
  
           <div class="question-block">
             <span class="question-label">Pregunta 3</span>
-            <p class="question-prompt">Según el <em>Fuero de Sevilla</em>, ¿cómo se ordenaba el espacio urbano? ¿Qué finalidad tenía esa regulación?</p>
+            <p class="question-prompt">Según la fuente primaria (Usos e costumbres del mercado de Sevilla), ¿cómo se organizaba el mercado y el espacio urbano? ¿Qué finalidad tenía esa regulación? </p>
             <textarea class="answer-field" id="s4_q3" rows="4" placeholder="Explica la organización del espacio urbano según el fuero y sus objetivos..."></textarea>
           </div>
  
